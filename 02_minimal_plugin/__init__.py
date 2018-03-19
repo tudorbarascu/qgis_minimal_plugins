@@ -10,6 +10,11 @@
 # (at your option) any later version.
 #---------------------------------------------------------------------
 
+# https://qgis.org/api/classQgisInterface.html
+# http://doc.qt.io/qt-5.9/qaction-members.html
+# https://qgis.org/api/classQgsDataSourceUri.html
+# http://doc.qt.io/qt-5.9/qmessagebox.html
+
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
