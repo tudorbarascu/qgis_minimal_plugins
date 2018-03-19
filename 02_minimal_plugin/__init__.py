@@ -42,12 +42,12 @@ class MinimalPlugin:
         vl = QgsVectorLayer(uri.uri(), "buildings", "postgres")
 
         if not vl.isValid():
-            print("failed to load buildings!")
-            QMessageBox.error(None, "Plugin minimal 02", "failed to load buildings!")
+            QMessageBox.critical(None, "Plugin minimal 02", "failed to load buildings!")
 
-        count = 0
+        else:
+            count = 0
 
-        for entitate in vl.getFeatures():
-            count += 1
+            for entitate in vl.getFeatures():
+                count += 1
 
-        QMessageBox.information(None, "Plugin minimal 02", "No. of buildings: " + str(count))
+            QMessageBox.information(None, "Plugin minimal 02", "No. of buildings: " + str(count))
