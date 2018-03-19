@@ -14,11 +14,9 @@
 # http://doc.qt.io/qt-5.9/qaction-members.html
 # http://doc.qt.io/qt-5.9/qmessagebox.html
 
+# from PyQt5.QtWidgets import *
+from qgis.PyQt.QtWidgets import *
 
-from PyQt5.QtGui import *
-from PyQt5.QtCore import *
-from PyQt5.QtWidgets import *
-from PyQt5.QtPrintSupport import *
 
 def classFactory(iface):
     return MinimalPlugin(iface)

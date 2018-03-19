@@ -15,16 +15,11 @@
 # https://qgis.org/api/classQgsDataSourceUri.html
 # http://doc.qt.io/qt-5.9/qmessagebox.html
 
-from PyQt5.QtCore import *
-from PyQt5.QtGui import *
-from PyQt5.QtWidgets import *
-from PyQt5.QtPrintSupport import *
+from qgis.PyQt.QtWidgets import *
 from qgis.core import QgsDataSourceUri, QgsVectorLayer
-
 
 def classFactory(iface):
     return MinimalPlugin(iface)
-
 
 class MinimalPlugin:
     def __init__(self, iface):
