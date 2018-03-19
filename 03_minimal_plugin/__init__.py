@@ -3,23 +3,19 @@
 # Copyright (C) 2018 Tudor Bărăscu
 #-----------------------------------------------------------
 # Licensed under the terms of GNU GPL 2
-# 
+#
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation; either version 2 of the License, or
 # (at your option) any later version.
 #---------------------------------------------------------------------
 
-# https://qgis.org/api/classQgisInterface.html
-# http://doc.qt.io/qt-5.9/qaction-members.html
-# https://qgis.org/api/classQgsDataSourceUri.html
-# http://doc.qt.io/qt-5.9/qmessagebox.html
-
 from qgis.PyQt.QtWidgets import *
-from qgis.core import QgsDataSourceUri, QgsVectorLayer
+from qgis.core import QgsDataSourceUri, QgsVectorLayer, Qgis
 
 def classFactory(iface):
     return MinimalPlugin(iface)
+
 
 class MinimalPlugin:
     def __init__(self, iface):
@@ -42,12 +38,15 @@ class MinimalPlugin:
         vl = QgsVectorLayer(uri.uri(), "buildings", "postgres")
 
         if not vl.isValid():
-            QMessageBox.critical(None, "Plugin minimal 02", "failed to load buildings!")
+            self.iface.messageBar().pushMessage("Error", "failed to load buildings",
+                                                Qgis.Critical, duration=5)
 
         else:
-            count = 0
+            large_footprint_buildings = 0
 
             for feature in vl.getFeatures():
-                count += 1
+                if feature.geometry().area() >= 200:
+                    large_footprint_buildings += 1
 
-            QMessageBox.information(None, "Plugin minimal 02", "No. of buildings: " + str(count))
+            self.iface.messageBar().pushMessage("The no. of buildings with a footprint of at least 200 sq meters is",
+                                                str(large_footprint_buildings), Qgis.Info, duration=5)
