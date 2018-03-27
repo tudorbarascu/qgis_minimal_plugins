@@ -19,6 +19,9 @@
   </projectCrs>
   <layer-tree-group>
     <customproperties/>
+    <layer-tree-layer providerKey="postgres" checked="Qt::Checked" id="pipe_c660d43f_5b40_4d42_b21b_e28850247315" source="dbname='tutorial' host=127.0.0.1 port=5432 sslmode=disable key='id' srid=3844 type=LineString table=&quot;water&quot;.&quot;pipe&quot; (geom) sql=" name="pipe" expanded="1">
+      <customproperties/>
+    </layer-tree-layer>
     <layer-tree-layer providerKey="postgres" checked="Qt::Checked" id="status_8f5bab98_a39f_49b9_a071_1c31a4e22319" source="dbname='tutorial' host=127.0.0.1 port=5432 sslmode=disable key='id' table=&quot;dictionary&quot;.&quot;status&quot; sql=" name="status" expanded="1">
       <customproperties/>
     </layer-tree-layer>
@@ -31,23 +34,24 @@
     <custom-order enabled="0">
       <item>buildings_2ad88db9_689a_4b52_8f9a_61473debfc69</item>
       <item>boundaries_10d40433_4723_4b72_bc08_827114ac6438</item>
-      <item>status_8f5bab98_a39f_49b9_a071_1c31a4e22319</item>
+      <item>pipe_c660d43f_5b40_4d42_b21b_e28850247315</item>
     </custom-order>
   </layer-tree-group>
   <snapping-settings mode="2" unit="1" type="2" tolerance="30" intersection-snapping="0" enabled="1">
     <individual-layer-settings>
-      <layer-setting units="1" id="buildings_2ad88db9_689a_4b52_8f9a_61473debfc69" type="2" tolerance="30" enabled="1"/>
+      <layer-setting units="1" id="pipe_c660d43f_5b40_4d42_b21b_e28850247315" type="2" tolerance="30" enabled="1"/>
       <layer-setting units="1" id="boundaries_10d40433_4723_4b72_bc08_827114ac6438" type="2" tolerance="30" enabled="1"/>
+      <layer-setting units="1" id="buildings_2ad88db9_689a_4b52_8f9a_61473debfc69" type="2" tolerance="30" enabled="1"/>
     </individual-layer-settings>
   </snapping-settings>
   <relations/>
   <mapcanvas name="theMapCanvas" annotationsVisible="1">
     <units>meters</units>
     <extent>
-      <xmin>450163.44647652393905446</xmin>
-      <ymin>400347.13217352546053007</ymin>
-      <xmax>451100.60169726348249242</xmax>
-      <ymax>401158.6784112325985916</ymax>
+      <xmin>450046.14418822433799505</xmin>
+      <ymin>400273.70107218809425831</ymin>
+      <xmax>450749.01060377899557352</xmax>
+      <ymax>400882.36075046844780445</ymax>
     </extent>
     <rotation>0</rotation>
     <destinationsrs>
@@ -65,6 +69,11 @@
     <rendermaptile>0</rendermaptile>
   </mapcanvas>
   <legend updateDrawingOrder="true">
+    <legendlayer showFeatureCount="0" drawingOrder="-1" checked="Qt::Checked" open="true" name="pipe">
+      <filegroup hidden="false" open="true">
+        <legendlayerfile layerid="pipe_c660d43f_5b40_4d42_b21b_e28850247315" visible="1" isInOverview="0"/>
+      </filegroup>
+    </legendlayer>
     <legendlayer showFeatureCount="0" drawingOrder="-1" checked="Qt::Checked" open="true" name="status">
       <filegroup hidden="false" open="true">
         <legendlayerfile layerid="status_8f5bab98_a39f_49b9_a071_1c31a4e22319" visible="1" isInOverview="0"/>
@@ -418,9 +427,7 @@ def my_form_open(dialog, layer, feature):
         </symbols>
       </renderer-v2>
       <customproperties>
-        <property key="dualview/previewExpressions">
-          <value>COALESCE("objectid", '&lt;NULL>')</value>
-        </property>
+        <property key="dualview/previewExpressions" value="COALESCE(&quot;objectid&quot;, '&lt;NULL>')"/>
         <property key="embeddedWidgets/count" value="0"/>
         <property key="variableNames"/>
         <property key="variableValues"/>
@@ -550,6 +557,316 @@ def my_form_open(dialog, layer, feature):
       <previewExpression>COALESCE("objectid", '&lt;NULL>')</previewExpression>
       <mapTip></mapTip>
     </maplayer>
+    <maplayer autoRefreshTime="0" refreshOnNotifyEnabled="0" geometry="Line" simplifyMaxScale="1" minScale="1e+8" autoRefreshEnabled="0" simplifyDrawingTol="1" simplifyLocal="0" hasScaleBasedVisibilityFlag="0" refreshOnNotifyMessage="" type="vector" maxScale="0" labelsEnabled="0" readOnly="0" simplifyDrawingHints="1" simplifyAlgorithm="0">
+      <extent>
+        <xmin>450300</xmin>
+        <ymin>400520</ymin>
+        <xmax>450320</xmax>
+        <ymax>400750</ymax>
+      </extent>
+      <id>pipe_c660d43f_5b40_4d42_b21b_e28850247315</id>
+      <datasource>dbname='tutorial' host=127.0.0.1 port=5432 sslmode=disable key='id' srid=3844 type=LineString table="water"."pipe" (geom) sql=</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>pipe</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=sterea +lat_0=46 +lon_0=25 +k=0.99975 +x_0=500000 +y_0=500000 +ellps=krass +towgs84=2.329,-147.042,-92.08,0.309,-0.325,-0.497,5.69 +units=m +no_defs</proj4>
+          <srsid>27265</srsid>
+          <srid>3844</srid>
+          <authid>EPSG:3844</authid>
+          <description>Pulkovo 1942(58) / Stereo70</description>
+          <projectionacronym>sterea</projectionacronym>
+          <ellipsoidacronym>krass</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type>dataset</type>
+        <title></title>
+        <abstract></abstract>
+        <contact>
+          <name></name>
+          <organization></organization>
+          <position></position>
+          <voice></voice>
+          <fax></fax>
+          <email></email>
+          <role></role>
+        </contact>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <proj4>+proj=sterea +lat_0=46 +lon_0=25 +k=0.99975 +x_0=500000 +y_0=500000 +ellps=krass +towgs84=2.329,-147.042,-92.08,0.309,-0.325,-0.497,5.69 +units=m +no_defs</proj4>
+            <srsid>27265</srsid>
+            <srid>3844</srid>
+            <authid>EPSG:3844</authid>
+            <description>Pulkovo 1942(58) / Stereo70</description>
+            <projectionacronym>sterea</projectionacronym>
+            <ellipsoidacronym>krass</ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent>
+          <spatial maxy="0" miny="0" crs="EPSG:3844" dimensions="2" minx="0" maxx="0" minz="0" maxz="0"/>
+          <temporal>
+            <period>
+              <start></start>
+              <end></end>
+            </period>
+          </temporal>
+        </extent>
+      </resourceMetadata>
+      <provider encoding="UTF-8">postgres</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <renderer-v2 symbollevels="0" type="singleSymbol" forceraster="0" enableorderby="0">
+        <symbols>
+          <symbol clip_to_extent="1" type="line" alpha="1" name="0">
+            <layer class="SimpleLine" locked="0" pass="0" enabled="1">
+              <prop v="round" k="capstyle"/>
+              <prop v="5;2" k="customdash"/>
+              <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+              <prop v="MM" k="customdash_unit"/>
+              <prop v="0" k="draw_inside_polygon"/>
+              <prop v="round" k="joinstyle"/>
+              <prop v="227,26,28,255" k="line_color"/>
+              <prop v="solid" k="line_style"/>
+              <prop v="1.86" k="line_width"/>
+              <prop v="MM" k="line_width_unit"/>
+              <prop v="0" k="offset"/>
+              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="MM" k="offset_unit"/>
+              <prop v="0" k="use_custom_dash"/>
+              <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+              <effect type="effectStack" enabled="1">
+                <effect type="dropShadow">
+                  <prop v="13" k="blend_mode"/>
+                  <prop v="10" k="blur_level"/>
+                  <prop v="0,0,0,255" k="color"/>
+                  <prop v="2" k="draw_mode"/>
+                  <prop v="0" k="enabled"/>
+                  <prop v="135" k="offset_angle"/>
+                  <prop v="2" k="offset_distance"/>
+                  <prop v="MM" k="offset_unit"/>
+                  <prop v="3x:0,0,0,0,0,0" k="offset_unit_scale"/>
+                  <prop v="1" k="opacity"/>
+                </effect>
+                <effect type="outerGlow">
+                  <prop v="0" k="blend_mode"/>
+                  <prop v="3" k="blur_level"/>
+                  <prop v="0,0,255,255" k="color1"/>
+                  <prop v="0,255,0,255" k="color2"/>
+                  <prop v="0" k="color_type"/>
+                  <prop v="0" k="discrete"/>
+                  <prop v="2" k="draw_mode"/>
+                  <prop v="1" k="enabled"/>
+                  <prop v="0.5" k="opacity"/>
+                  <prop v="gradient" k="rampType"/>
+                  <prop v="239,41,41,255" k="single_color"/>
+                  <prop v="2" k="spread"/>
+                  <prop v="MM" k="spread_unit"/>
+                  <prop v="3x:0,0,0,0,0,0" k="spread_unit_scale"/>
+                </effect>
+                <effect type="drawSource">
+                  <prop v="0" k="blend_mode"/>
+                  <prop v="2" k="draw_mode"/>
+                  <prop v="1" k="enabled"/>
+                  <prop v="1" k="opacity"/>
+                </effect>
+                <effect type="innerShadow">
+                  <prop v="13" k="blend_mode"/>
+                  <prop v="10" k="blur_level"/>
+                  <prop v="0,0,0,255" k="color"/>
+                  <prop v="2" k="draw_mode"/>
+                  <prop v="1" k="enabled"/>
+                  <prop v="135" k="offset_angle"/>
+                  <prop v="2" k="offset_distance"/>
+                  <prop v="MM" k="offset_unit"/>
+                  <prop v="3x:0,0,0,0,0,0" k="offset_unit_scale"/>
+                  <prop v="0.146" k="opacity"/>
+                </effect>
+                <effect type="innerGlow">
+                  <prop v="0" k="blend_mode"/>
+                  <prop v="3" k="blur_level"/>
+                  <prop v="0,0,255,255" k="color1"/>
+                  <prop v="0,255,0,255" k="color2"/>
+                  <prop v="0" k="color_type"/>
+                  <prop v="0" k="discrete"/>
+                  <prop v="2" k="draw_mode"/>
+                  <prop v="0" k="enabled"/>
+                  <prop v="0.386" k="opacity"/>
+                  <prop v="gradient" k="rampType"/>
+                  <prop v="255,255,255,255" k="single_color"/>
+                  <prop v="2" k="spread"/>
+                  <prop v="MM" k="spread_unit"/>
+                  <prop v="3x:0,0,0,0,0,0" k="spread_unit_scale"/>
+                </effect>
+              </effect>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option type="QString" name="name" value=""/>
+                  <Option name="properties"/>
+                  <Option type="QString" name="type" value="collection"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale/>
+      </renderer-v2>
+      <customproperties>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
+        <DiagramCategory scaleBasedVisibility="0" penAlpha="255" barWidth="5" backgroundColor="#ffffff" sizeScale="3x:0,0,0,0,0,0" height="15" rotationOffset="270" minimumSize="0" penColor="#000000" penWidth="0" backgroundAlpha="255" opacity="1" labelPlacementMethod="XHeight" lineSizeType="MM" minScaleDenominator="0" sizeType="MM" maxScaleDenominator="1e+8" enabled="0" width="15" scaleDependency="Area" lineSizeScale="3x:0,0,0,0,0,0" diagramOrientation="Up">
+          <fontProperties style="" description="Sans Serif,9,-1,5,50,0,0,0,0,0"/>
+          <attribute color="#000000" label="" field=""/>
+        </DiagramCategory>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings priority="0" placement="2" linePlacementFlags="18" dist="0" obstacle="0" zIndex="0" showAll="1">
+        <properties>
+          <Option type="Map">
+            <Option type="QString" name="name" value=""/>
+            <Option name="properties"/>
+            <Option type="QString" name="type" value="collection"/>
+          </Option>
+        </properties>
+      </DiagramLayerSettings>
+      <fieldConfiguration>
+        <field name="id">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="year">
+          <editWidget type="ValueRelation">
+            <config>
+              <Option type="Map">
+                <Option type="bool" name="AllowMulti" value="false"/>
+                <Option type="bool" name="AllowNull" value="false"/>
+                <Option type="QString" name="FilterExpression" value=""/>
+                <Option type="QString" name="Key" value="id"/>
+                <Option type="QString" name="Layer" value="status_8f5bab98_a39f_49b9_a071_1c31a4e22319"/>
+                <Option type="bool" name="OrderByValue" value="false"/>
+                <Option type="bool" name="UseCompleter" value="false"/>
+                <Option type="QString" name="Value" value="value_en"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="fk_status">
+          <editWidget type="ValueRelation">
+            <config>
+              <Option type="Map">
+                <Option type="bool" name="AllowMulti" value="false"/>
+                <Option type="bool" name="AllowNull" value="false"/>
+                <Option type="QString" name="FilterExpression" value=""/>
+                <Option type="QString" name="Key" value="id"/>
+                <Option type="QString" name="Layer" value="status_8f5bab98_a39f_49b9_a071_1c31a4e22319"/>
+                <Option type="bool" name="OrderByValue" value="false"/>
+                <Option type="bool" name="UseCompleter" value="false"/>
+                <Option type="QString" name="Value" value="value_en"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias name="" index="0" field="id"/>
+        <alias name="" index="1" field="year"/>
+        <alias name="" index="2" field="fk_status"/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <defaults>
+        <default expression="" applyOnUpdate="0" field="id"/>
+        <default expression="" applyOnUpdate="0" field="year"/>
+        <default expression="" applyOnUpdate="0" field="fk_status"/>
+      </defaults>
+      <constraints>
+        <constraint notnull_strength="1" field="id" constraints="3" exp_strength="0" unique_strength="1"/>
+        <constraint notnull_strength="0" field="year" constraints="0" exp_strength="0" unique_strength="0"/>
+        <constraint notnull_strength="1" field="fk_status" constraints="1" exp_strength="0" unique_strength="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint exp="" desc="" field="id"/>
+        <constraint exp="" desc="" field="year"/>
+        <constraint exp="" desc="" field="fk_status"/>
+      </constraintExpressions>
+      <attributeactions>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+      </attributeactions>
+      <attributetableconfig sortOrder="0" sortExpression="" actionWidgetStyle="dropDown">
+        <columns>
+          <column hidden="0" width="-1" type="field" name="id"/>
+          <column hidden="1" width="-1" type="actions"/>
+          <column hidden="0" width="-1" type="field" name="year"/>
+          <column hidden="0" width="-1" type="field" name="fk_status"/>
+        </columns>
+      </attributetableconfig>
+      <editform>.</editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable>
+        <field editable="1" name="fk_status"/>
+        <field editable="1" name="id"/>
+        <field editable="1" name="year"/>
+      </editable>
+      <labelOnTop>
+        <field labelOnTop="0" name="fk_status"/>
+        <field labelOnTop="0" name="id"/>
+        <field labelOnTop="0" name="year"/>
+      </labelOnTop>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <expressionfields/>
+      <previewExpression>id</previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
     <maplayer autoRefreshTime="0" refreshOnNotifyEnabled="0" geometry="No geometry" minScale="1e+8" autoRefreshEnabled="0" hasScaleBasedVisibilityFlag="0" refreshOnNotifyMessage="" type="vector" maxScale="0" readOnly="0">
       <id>status_8f5bab98_a39f_49b9_a071_1c31a4e22319</id>
       <datasource>dbname='tutorial' host=127.0.0.1 port=5432 sslmode=disable key='id' table="dictionary"."status" sql=</datasource>
@@ -594,9 +911,7 @@ def my_form_open(dialog, layer, feature):
         <extent/>
       </resourceMetadata>
       <customproperties>
-        <property key="dualview/previewExpressions">
-          <value>"id"</value>
-        </property>
+        <property key="dualview/previewExpressions" value="&quot;id&quot;"/>
       </customproperties>
       <provider encoding="UTF-8">postgres</provider>
       <vectorjoins/>
@@ -687,7 +1002,7 @@ def my_form_open(dialog, layer, feature):
           <column hidden="1" width="-1" type="actions"/>
         </columns>
       </attributetableconfig>
-      <editform></editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
       <editforminitfilepath></editforminitfilepath>
@@ -709,7 +1024,7 @@ def my_form_open(dialog, layer, feature):
   <layerorder>
     <layer id="buildings_2ad88db9_689a_4b52_8f9a_61473debfc69"/>
     <layer id="boundaries_10d40433_4723_4b72_bc08_827114ac6438"/>
-    <layer id="status_8f5bab98_a39f_49b9_a071_1c31a4e22319"/>
+    <layer id="pipe_c660d43f_5b40_4d42_b21b_e28850247315"/>
   </layerorder>
   <properties>
     <PositionPrecision>
@@ -731,6 +1046,17 @@ def my_form_open(dialog, layer, feature):
       <CanvasColorBluePart type="int">255</CanvasColorBluePart>
       <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
     </Gui>
+    <PAL>
+      <DrawRectOnly type="bool">false</DrawRectOnly>
+      <ShowingAllLabels type="bool">false</ShowingAllLabels>
+      <CandidatesPolygon type="int">30</CandidatesPolygon>
+      <ShowingPartialsLabels type="bool">true</ShowingPartialsLabels>
+      <DrawOutlineLabels type="bool">true</DrawOutlineLabels>
+      <SearchMethod type="int">0</SearchMethod>
+      <CandidatesPoint type="int">16</CandidatesPoint>
+      <CandidatesLine type="int">50</CandidatesLine>
+      <ShowingCandidates type="bool">false</ShowingCandidates>
+    </PAL>
     <Measurement>
       <AreaUnits type="QString">m2</AreaUnits>
       <DistanceUnits type="QString">meters</DistanceUnits>
