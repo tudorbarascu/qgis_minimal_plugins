@@ -48,10 +48,10 @@
   <mapcanvas name="theMapCanvas" annotationsVisible="1">
     <units>meters</units>
     <extent>
-      <xmin>450046.14418822433799505</xmin>
-      <ymin>400273.70107218809425831</ymin>
-      <xmax>450749.01060377899557352</xmax>
-      <ymax>400882.36075046844780445</ymax>
+      <xmin>450360.4818845558911562</xmin>
+      <ymin>400226.16375052853254601</ymin>
+      <xmax>451063.34830011054873466</xmax>
+      <ymax>400834.82342880888609216</ymax>
     </extent>
     <rotation>0</rotation>
     <destinationsrs>
@@ -755,22 +755,19 @@ def my_form_open(dialog, layer, feature):
         <field name="id">
           <editWidget type="TextEdit">
             <config>
-              <Option/>
+              <Option type="Map">
+                <Option type="bool" name="IsMultiline" value="false"/>
+                <Option type="bool" name="UseHtml" value="false"/>
+              </Option>
             </config>
           </editWidget>
         </field>
         <field name="year">
-          <editWidget type="ValueRelation">
+          <editWidget type="TextEdit">
             <config>
               <Option type="Map">
-                <Option type="bool" name="AllowMulti" value="false"/>
-                <Option type="bool" name="AllowNull" value="false"/>
-                <Option type="QString" name="FilterExpression" value=""/>
-                <Option type="QString" name="Key" value="id"/>
-                <Option type="QString" name="Layer" value="status_8f5bab98_a39f_49b9_a071_1c31a4e22319"/>
-                <Option type="bool" name="OrderByValue" value="false"/>
-                <Option type="bool" name="UseCompleter" value="false"/>
-                <Option type="QString" name="Value" value="value_en"/>
+                <Option type="bool" name="IsMultiline" value="false"/>
+                <Option type="bool" name="UseHtml" value="false"/>
               </Option>
             </config>
           </editWidget>
@@ -795,7 +792,7 @@ def my_form_open(dialog, layer, feature):
       <aliases>
         <alias name="" index="0" field="id"/>
         <alias name="" index="1" field="year"/>
-        <alias name="" index="2" field="fk_status"/>
+        <alias name="status" index="2" field="fk_status"/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -806,12 +803,12 @@ def my_form_open(dialog, layer, feature):
       </defaults>
       <constraints>
         <constraint notnull_strength="1" field="id" constraints="3" exp_strength="0" unique_strength="1"/>
-        <constraint notnull_strength="0" field="year" constraints="0" exp_strength="0" unique_strength="0"/>
+        <constraint notnull_strength="0" field="year" constraints="4" exp_strength="1" unique_strength="0"/>
         <constraint notnull_strength="1" field="fk_status" constraints="1" exp_strength="0" unique_strength="0"/>
       </constraints>
       <constraintExpressions>
         <constraint exp="" desc="" field="id"/>
-        <constraint exp="" desc="" field="year"/>
+        <constraint exp="&quot;year&quot; IS NULL OR (1950 &lt;= &quot;year&quot; AND &quot;year&quot; &lt;= now())&#xa;&#xa;" desc="Install year must be between 1950 and the current year." field="year"/>
         <constraint exp="" desc="" field="fk_status"/>
       </constraintExpressions>
       <attributeactions>
