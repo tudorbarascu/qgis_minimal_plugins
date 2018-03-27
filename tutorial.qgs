@@ -19,19 +19,25 @@
   </projectCrs>
   <layer-tree-group>
     <customproperties/>
-    <layer-tree-layer expanded="1" source="dbname='tutorial' host=127.0.0.1 port=5432 sslmode=disable key='id' table=&quot;dictionary&quot;.&quot;pipe_function&quot; sql=" checked="Qt::Checked" id="pipe_function_ea2c1a16_fb60_4809_840f_cb0c6a2843ef" providerKey="postgres" name="pipe_function">
+    <layer-tree-layer checked="Qt::Checked" name="locationtype" providerKey="postgres" expanded="1" id="locationtype_c568eaf4_ba15_4406_8a74_e5356858fe78" source="dbname='tutorial' host=127.0.0.1 port=5432 sslmode=disable key='id' table=&quot;dictionary&quot;.&quot;locationtype&quot; sql=">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" source="dbname='tutorial' host=127.0.0.1 port=5432 sslmode=disable key='id' table=&quot;dictionary&quot;.&quot;status&quot; sql=" checked="Qt::Checked" id="status_8f5bab98_a39f_49b9_a071_1c31a4e22319" providerKey="postgres" name="status">
+    <layer-tree-layer checked="Qt::Checked" name="pipe_function" providerKey="postgres" expanded="1" id="pipe_function_ea2c1a16_fb60_4809_840f_cb0c6a2843ef" source="dbname='tutorial' host=127.0.0.1 port=5432 sslmode=disable key='id' table=&quot;dictionary&quot;.&quot;pipe_function&quot; sql=">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" source="dbname='tutorial' host=127.0.0.1 port=5432 sslmode=disable key='id' srid=3844 type=LineString table=&quot;water&quot;.&quot;pipe&quot; (geom) sql=" checked="Qt::Checked" id="pipe_c660d43f_5b40_4d42_b21b_e28850247315" providerKey="postgres" name="pipe">
+    <layer-tree-layer checked="Qt::Checked" name="pipe_material" providerKey="postgres" expanded="1" id="pipe_material_b39f0bd5_1f5e_4bf6_bf5c_fd2920c63e62" source="dbname='tutorial' host=127.0.0.1 port=5432 sslmode=disable key='id' table=&quot;dictionary&quot;.&quot;pipe_material&quot; sql=">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" source="dbname='tutorial' host=127.0.0.1 port=5432 sslmode=disable key='id' srid=3844 type=LineString table=&quot;topo&quot;.&quot;boundaries&quot; (geom) sql=" checked="Qt::Checked" id="boundaries_10d40433_4723_4b72_bc08_827114ac6438" providerKey="postgres" name="boundaries">
+    <layer-tree-layer checked="Qt::Checked" name="status" providerKey="postgres" expanded="1" id="status_8f5bab98_a39f_49b9_a071_1c31a4e22319" source="dbname='tutorial' host=127.0.0.1 port=5432 sslmode=disable key='id' table=&quot;dictionary&quot;.&quot;status&quot; sql=">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" source="dbname='tutorial' host=127.0.0.1 port=5432 sslmode=disable key='id' srid=3844 type=Polygon table=&quot;topo&quot;.&quot;buildings&quot; (geom) sql=" checked="Qt::Checked" id="buildings_2ad88db9_689a_4b52_8f9a_61473debfc69" providerKey="postgres" name="buildings">
+    <layer-tree-layer checked="Qt::Checked" name="pipe" providerKey="postgres" expanded="1" id="pipe_c660d43f_5b40_4d42_b21b_e28850247315" source="dbname='tutorial' host=127.0.0.1 port=5432 sslmode=disable key='id' srid=3844 type=LineString table=&quot;water&quot;.&quot;pipe&quot; (geom) sql=">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer checked="Qt::Checked" name="boundaries" providerKey="postgres" expanded="1" id="boundaries_10d40433_4723_4b72_bc08_827114ac6438" source="dbname='tutorial' host=127.0.0.1 port=5432 sslmode=disable key='id' srid=3844 type=LineString table=&quot;topo&quot;.&quot;boundaries&quot; (geom) sql=">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer checked="Qt::Checked" name="buildings" providerKey="postgres" expanded="1" id="buildings_2ad88db9_689a_4b52_8f9a_61473debfc69" source="dbname='tutorial' host=127.0.0.1 port=5432 sslmode=disable key='id' srid=3844 type=Polygon table=&quot;topo&quot;.&quot;buildings&quot; (geom) sql=">
       <customproperties/>
     </layer-tree-layer>
     <custom-order enabled="0">
@@ -40,21 +46,25 @@
       <item>pipe_c660d43f_5b40_4d42_b21b_e28850247315</item>
     </custom-order>
   </layer-tree-group>
-  <snapping-settings enabled="1" intersection-snapping="0" tolerance="30" mode="2" type="2" unit="1">
+  <snapping-settings enabled="1" unit="1" type="2" tolerance="30" mode="2" intersection-snapping="0">
     <individual-layer-settings>
-      <layer-setting enabled="1" units="1" id="boundaries_10d40433_4723_4b72_bc08_827114ac6438" tolerance="30" type="2"/>
-      <layer-setting enabled="1" units="1" id="buildings_2ad88db9_689a_4b52_8f9a_61473debfc69" tolerance="30" type="2"/>
-      <layer-setting enabled="1" units="1" id="pipe_c660d43f_5b40_4d42_b21b_e28850247315" tolerance="30" type="2"/>
+      <layer-setting enabled="1" type="2" units="1" tolerance="30" id="boundaries_10d40433_4723_4b72_bc08_827114ac6438"/>
+      <layer-setting enabled="1" type="2" units="1" tolerance="30" id="buildings_2ad88db9_689a_4b52_8f9a_61473debfc69"/>
+      <layer-setting enabled="1" type="2" units="1" tolerance="30" id="pipe_c660d43f_5b40_4d42_b21b_e28850247315"/>
     </individual-layer-settings>
   </snapping-settings>
-  <relations/>
-  <mapcanvas annotationsVisible="1" name="theMapCanvas">
+  <relations>
+    <relation referencedLayer="pipe_material_b39f0bd5_1f5e_4bf6_bf5c_fd2920c63e62" name="pipe - material" referencingLayer="pipe_c660d43f_5b40_4d42_b21b_e28850247315" strength="Association" id="relation_pipe_material">
+      <fieldRef referencedField="id" referencingField="fk_material"/>
+    </relation>
+  </relations>
+  <mapcanvas name="theMapCanvas" annotationsVisible="1">
     <units>meters</units>
     <extent>
-      <xmin>450251.66091177251655608</xmin>
-      <ymin>400219.40086521429475397</ymin>
-      <xmax>450954.52732732717413455</xmax>
-      <ymax>400828.06054349464830011</ymax>
+      <xmin>450070.42226565937744454</xmin>
+      <ymin>400291.53830856579588726</ymin>
+      <xmax>450820.14644225017400458</xmax>
+      <ymax>400940.77529873192543164</ymax>
     </extent>
     <rotation>0</rotation>
     <destinationsrs>
@@ -72,35 +82,45 @@
     <rendermaptile>0</rendermaptile>
   </mapcanvas>
   <legend updateDrawingOrder="true">
-    <legendlayer checked="Qt::Checked" showFeatureCount="0" drawingOrder="-1" open="true" name="pipe_function">
-      <filegroup hidden="false" open="true">
+    <legendlayer checked="Qt::Checked" showFeatureCount="0" name="locationtype" open="true" drawingOrder="-1">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile visible="1" layerid="locationtype_c568eaf4_ba15_4406_8a74_e5356858fe78" isInOverview="0"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer checked="Qt::Checked" showFeatureCount="0" name="pipe_function" open="true" drawingOrder="-1">
+      <filegroup open="true" hidden="false">
         <legendlayerfile visible="1" layerid="pipe_function_ea2c1a16_fb60_4809_840f_cb0c6a2843ef" isInOverview="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer checked="Qt::Checked" showFeatureCount="0" drawingOrder="-1" open="true" name="status">
-      <filegroup hidden="false" open="true">
+    <legendlayer checked="Qt::Checked" showFeatureCount="0" name="pipe_material" open="true" drawingOrder="-1">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile visible="1" layerid="pipe_material_b39f0bd5_1f5e_4bf6_bf5c_fd2920c63e62" isInOverview="0"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer checked="Qt::Checked" showFeatureCount="0" name="status" open="true" drawingOrder="-1">
+      <filegroup open="true" hidden="false">
         <legendlayerfile visible="1" layerid="status_8f5bab98_a39f_49b9_a071_1c31a4e22319" isInOverview="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer checked="Qt::Checked" showFeatureCount="0" drawingOrder="-1" open="true" name="pipe">
-      <filegroup hidden="false" open="true">
+    <legendlayer checked="Qt::Checked" showFeatureCount="0" name="pipe" open="true" drawingOrder="-1">
+      <filegroup open="true" hidden="false">
         <legendlayerfile visible="1" layerid="pipe_c660d43f_5b40_4d42_b21b_e28850247315" isInOverview="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer checked="Qt::Checked" showFeatureCount="0" drawingOrder="-1" open="true" name="boundaries">
-      <filegroup hidden="false" open="true">
+    <legendlayer checked="Qt::Checked" showFeatureCount="0" name="boundaries" open="true" drawingOrder="-1">
+      <filegroup open="true" hidden="false">
         <legendlayerfile visible="1" layerid="boundaries_10d40433_4723_4b72_bc08_827114ac6438" isInOverview="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer checked="Qt::Checked" showFeatureCount="0" drawingOrder="-1" open="true" name="buildings">
-      <filegroup hidden="false" open="true">
+    <legendlayer checked="Qt::Checked" showFeatureCount="0" name="buildings" open="true" drawingOrder="-1">
+      <filegroup open="true" hidden="false">
         <legendlayerfile visible="1" layerid="buildings_2ad88db9_689a_4b52_8f9a_61473debfc69" isInOverview="0"/>
       </filegroup>
     </legendlayer>
   </legend>
   <mapViewDocks/>
   <projectlayers>
-    <maplayer refreshOnNotifyMessage="" refreshOnNotifyEnabled="0" simplifyMaxScale="1" labelsEnabled="1" readOnly="0" simplifyDrawingHints="1" hasScaleBasedVisibilityFlag="1" autoRefreshTime="0" minScale="10001" geometry="Line" simplifyAlgorithm="0" autoRefreshEnabled="0" simplifyLocal="0" type="vector" simplifyDrawingTol="1" maxScale="0">
+    <maplayer autoRefreshEnabled="0" maxScale="0" simplifyDrawingTol="1" autoRefreshTime="0" geometry="Line" simplifyAlgorithm="0" simplifyMaxScale="1" readOnly="0" type="vector" hasScaleBasedVisibilityFlag="1" refreshOnNotifyMessage="" simplifyLocal="0" refreshOnNotifyEnabled="0" labelsEnabled="1" minScale="10001" simplifyDrawingHints="1">
       <extent>
         <xmin>449549.40625</xmin>
         <ymin>400084.71875</ymin>
@@ -158,10 +178,10 @@
         <map-layer-style name="default"/>
       </map-layer-style-manager>
       <auxiliaryLayer/>
-      <renderer-v2 enableorderby="0" symbollevels="0" type="singleSymbol" forceraster="0">
+      <renderer-v2 forceraster="0" enableorderby="0" symbollevels="0" type="singleSymbol">
         <symbols>
-          <symbol clip_to_extent="1" type="line" name="0" alpha="1">
-            <layer enabled="1" class="SimpleLine" locked="0" pass="0">
+          <symbol name="0" clip_to_extent="1" alpha="1" type="line">
+            <layer locked="0" enabled="1" pass="0" class="SimpleLine">
               <prop v="square" k="capstyle"/>
               <prop v="5;2" k="customdash"/>
               <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
@@ -179,9 +199,9 @@
               <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option value="" type="QString" name="name"/>
+                  <Option name="name" value="" type="QString"/>
                   <Option name="properties"/>
-                  <Option value="collection" type="QString" name="type"/>
+                  <Option name="type" value="collection" type="QString"/>
                 </Option>
               </data_defined_properties>
             </layer>
@@ -198,17 +218,17 @@
       <featureBlendMode>0</featureBlendMode>
       <layerOpacity>1</layerOpacity>
       <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
-        <DiagramCategory penAlpha="255" barWidth="5" sizeScale="3x:0,0,0,0,0,0" penWidth="0" sizeType="MM" minScaleDenominator="inf" width="15" minimumSize="0" backgroundColor="#ffffff" scaleDependency="Area" lineSizeScale="3x:0,0,0,0,0,0" rotationOffset="270" height="15" labelPlacementMethod="XHeight" diagramOrientation="Up" backgroundAlpha="255" maxScaleDenominator="10001" lineSizeType="MM" scaleBasedVisibility="1" enabled="0" penColor="#000000" opacity="1">
-          <fontProperties description="Cantarell,11,-1,5,50,0,0,0,0,0" style=""/>
-          <attribute label="" color="#000000" field=""/>
+        <DiagramCategory minScaleDenominator="inf" lineSizeScale="3x:0,0,0,0,0,0" labelPlacementMethod="XHeight" enabled="0" penWidth="0" minimumSize="0" backgroundColor="#ffffff" maxScaleDenominator="10001" width="15" rotationOffset="270" penAlpha="255" barWidth="5" sizeScale="3x:0,0,0,0,0,0" sizeType="MM" scaleBasedVisibility="1" backgroundAlpha="255" diagramOrientation="Up" penColor="#000000" opacity="1" lineSizeType="MM" height="15" scaleDependency="Area">
+          <fontProperties style="" description="Cantarell,11,-1,5,50,0,0,0,0,0"/>
+          <attribute color="#000000" field="" label=""/>
         </DiagramCategory>
       </SingleCategoryDiagramRenderer>
-      <DiagramLayerSettings obstacle="0" dist="0" showAll="1" zIndex="0" linePlacementFlags="10" placement="2" priority="0">
+      <DiagramLayerSettings dist="0" showAll="1" placement="2" linePlacementFlags="10" priority="0" zIndex="0" obstacle="0">
         <properties>
           <Option type="Map">
-            <Option value="" type="QString" name="name"/>
+            <Option name="name" value="" type="QString"/>
             <Option name="properties"/>
-            <Option value="collection" type="QString" name="type"/>
+            <Option name="type" value="collection" type="QString"/>
           </Option>
         </properties>
       </DiagramLayerSettings>
@@ -217,37 +237,37 @@
           <editWidget type="TextEdit">
             <config>
               <Option type="Map">
-                <Option value="0" type="QString" name="IsMultiline"/>
-                <Option value="0" type="QString" name="UseHtml"/>
+                <Option name="IsMultiline" value="0" type="QString"/>
+                <Option name="UseHtml" value="0" type="QString"/>
               </Option>
             </config>
           </editWidget>
         </field>
       </fieldConfiguration>
       <aliases>
-        <alias index="0" name="" field="id"/>
+        <alias field="id" name="" index="0"/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <defaults>
-        <default expression="" applyOnUpdate="0" field="id"/>
+        <default field="id" expression="" applyOnUpdate="0"/>
       </defaults>
       <constraints>
-        <constraint notnull_strength="1" constraints="3" exp_strength="0" field="id" unique_strength="1"/>
+        <constraint field="id" notnull_strength="1" exp_strength="0" unique_strength="1" constraints="3"/>
       </constraints>
       <constraintExpressions>
-        <constraint exp="" desc="" field="id"/>
+        <constraint field="id" exp="" desc=""/>
       </constraintExpressions>
       <attributeactions>
         <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
       </attributeactions>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+      <attributetableconfig sortExpression="" actionWidgetStyle="dropDown" sortOrder="0">
         <columns>
-          <column width="-1" hidden="0" type="field" name="id"/>
-          <column width="-1" hidden="0" type="field" name="sursa_biroul_gis"/>
-          <column width="-1" hidden="0" type="field" name="ult_data"/>
-          <column width="-1" hidden="0" type="field" name="ult_editor"/>
-          <column width="-1" hidden="1" type="actions"/>
+          <column name="id" hidden="0" type="field" width="-1"/>
+          <column name="sursa_biroul_gis" hidden="0" type="field" width="-1"/>
+          <column name="ult_data" hidden="0" type="field" width="-1"/>
+          <column name="ult_editor" hidden="0" type="field" width="-1"/>
+          <column hidden="1" type="actions" width="-1"/>
         </columns>
       </attributetableconfig>
       <editform>Users/preda.radu/Desktop</editform>
@@ -284,7 +304,7 @@ def my_form_open(dialog, layer, feature):
       <previewExpression>COALESCE("objectid", '&lt;NULL>')</previewExpression>
       <mapTip></mapTip>
     </maplayer>
-    <maplayer refreshOnNotifyMessage="" refreshOnNotifyEnabled="0" simplifyMaxScale="1" labelsEnabled="0" readOnly="0" simplifyDrawingHints="1" hasScaleBasedVisibilityFlag="1" autoRefreshTime="0" minScale="30001" geometry="Polygon" simplifyAlgorithm="0" autoRefreshEnabled="0" simplifyLocal="0" type="vector" simplifyDrawingTol="1" maxScale="0">
+    <maplayer autoRefreshEnabled="0" maxScale="0" simplifyDrawingTol="1" autoRefreshTime="0" geometry="Polygon" simplifyAlgorithm="0" simplifyMaxScale="1" readOnly="0" type="vector" hasScaleBasedVisibilityFlag="1" refreshOnNotifyMessage="" simplifyLocal="0" refreshOnNotifyEnabled="0" labelsEnabled="0" minScale="30001" simplifyDrawingHints="1">
       <extent>
         <xmin>449581.0625</xmin>
         <ymin>400125.09375</ymin>
@@ -341,7 +361,7 @@ def my_form_open(dialog, layer, feature):
           </spatialrefsys>
         </crs>
         <extent>
-          <spatial dimensions="2" minz="0" maxz="0" minx="0" maxy="0" maxx="0" miny="0" crs="EPSG:3844"/>
+          <spatial dimensions="2" miny="0" minz="0" maxz="0" maxx="0" crs="EPSG:3844" minx="0" maxy="0"/>
           <temporal>
             <period>
               <start></start>
@@ -359,15 +379,15 @@ def my_form_open(dialog, layer, feature):
         <map-layer-style name="default"/>
       </map-layer-style-manager>
       <auxiliaryLayer/>
-      <renderer-v2 enableorderby="0" symbollevels="0" type="RuleRenderer" forceraster="0">
+      <renderer-v2 forceraster="0" enableorderby="0" symbollevels="0" type="RuleRenderer">
         <rules key="{0ee84f83-4a81-461a-995d-5d2a2c1b9796}">
-          <rule symbol="0" label="Water Buildings" key="{eedc875c-97c5-49ca-97c8-a7f646de670f}" filter="&quot;type&quot; = 3"/>
-          <rule symbol="1" label="Wastewater Buildings" key="{bb8eeb72-3845-4dbc-8a86-34daad24cfba}" filter="&quot;type&quot; = 4"/>
-          <rule symbol="2" label="Others" key="{af281804-a7bf-4e51-b2aa-983b30605bb4}" filter="&quot;type&quot; NOT IN (3, 4) OR &quot;type&quot; IS NULL"/>
+          <rule key="{eedc875c-97c5-49ca-97c8-a7f646de670f}" filter="&quot;type&quot; = 3" label="Water Buildings" symbol="0"/>
+          <rule key="{bb8eeb72-3845-4dbc-8a86-34daad24cfba}" filter="&quot;type&quot; = 4" label="Wastewater Buildings" symbol="1"/>
+          <rule key="{af281804-a7bf-4e51-b2aa-983b30605bb4}" filter="&quot;type&quot; NOT IN (3, 4) OR &quot;type&quot; IS NULL" label="Others" symbol="2"/>
         </rules>
         <symbols>
-          <symbol clip_to_extent="1" type="fill" name="0" alpha="1">
-            <layer enabled="1" class="SimpleFill" locked="0" pass="4">
+          <symbol name="0" clip_to_extent="1" alpha="1" type="fill">
+            <layer locked="0" enabled="1" pass="4" class="SimpleFill">
               <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
               <prop v="166,249,249,255" k="color"/>
               <prop v="bevel" k="joinstyle"/>
@@ -381,15 +401,15 @@ def my_form_open(dialog, layer, feature):
               <prop v="solid" k="style"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option value="" type="QString" name="name"/>
+                  <Option name="name" value="" type="QString"/>
                   <Option name="properties"/>
-                  <Option value="collection" type="QString" name="type"/>
+                  <Option name="type" value="collection" type="QString"/>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
-          <symbol clip_to_extent="1" type="fill" name="1" alpha="1">
-            <layer enabled="1" class="SimpleFill" locked="0" pass="3">
+          <symbol name="1" clip_to_extent="1" alpha="1" type="fill">
+            <layer locked="0" enabled="1" pass="3" class="SimpleFill">
               <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
               <prop v="244,0,0,255" k="color"/>
               <prop v="bevel" k="joinstyle"/>
@@ -403,15 +423,15 @@ def my_form_open(dialog, layer, feature):
               <prop v="solid" k="style"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option value="" type="QString" name="name"/>
+                  <Option name="name" value="" type="QString"/>
                   <Option name="properties"/>
-                  <Option value="collection" type="QString" name="type"/>
+                  <Option name="type" value="collection" type="QString"/>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
-          <symbol clip_to_extent="1" type="fill" name="2" alpha="1">
-            <layer enabled="1" class="SimpleFill" locked="0" pass="1">
+          <symbol name="2" clip_to_extent="1" alpha="1" type="fill">
+            <layer locked="0" enabled="1" pass="1" class="SimpleFill">
               <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
               <prop v="253,253,253,255" k="color"/>
               <prop v="bevel" k="joinstyle"/>
@@ -425,9 +445,9 @@ def my_form_open(dialog, layer, feature):
               <prop v="no" k="style"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option value="" type="QString" name="name"/>
+                  <Option name="name" value="" type="QString"/>
                   <Option name="properties"/>
-                  <Option value="collection" type="QString" name="type"/>
+                  <Option name="type" value="collection" type="QString"/>
                 </Option>
               </data_defined_properties>
             </layer>
@@ -444,23 +464,23 @@ def my_form_open(dialog, layer, feature):
       <featureBlendMode>0</featureBlendMode>
       <layerOpacity>1</layerOpacity>
       <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Pie">
-        <DiagramCategory penAlpha="255" barWidth="5" sizeScale="3x:0,0,0,0,0,0" penWidth="0" sizeType="MM" minScaleDenominator="0" width="15" minimumSize="0" backgroundColor="#ffffff" scaleDependency="Area" lineSizeScale="3x:0,0,0,0,0,0" rotationOffset="270" height="15" labelPlacementMethod="XHeight" diagramOrientation="Up" backgroundAlpha="255" maxScaleDenominator="30001" lineSizeType="MM" scaleBasedVisibility="1" enabled="0" penColor="#000000" opacity="1">
-          <fontProperties description="Sans,9,-1,5,50,0,0,0,0,0" style=""/>
-          <attribute label="" color="#000000" field=""/>
+        <DiagramCategory minScaleDenominator="0" lineSizeScale="3x:0,0,0,0,0,0" labelPlacementMethod="XHeight" enabled="0" penWidth="0" minimumSize="0" backgroundColor="#ffffff" maxScaleDenominator="30001" width="15" rotationOffset="270" penAlpha="255" barWidth="5" sizeScale="3x:0,0,0,0,0,0" sizeType="MM" scaleBasedVisibility="1" backgroundAlpha="255" diagramOrientation="Up" penColor="#000000" opacity="1" lineSizeType="MM" height="15" scaleDependency="Area">
+          <fontProperties style="" description="Sans,9,-1,5,50,0,0,0,0,0"/>
+          <attribute color="#000000" field="" label=""/>
         </DiagramCategory>
       </SingleCategoryDiagramRenderer>
-      <DiagramLayerSettings obstacle="0" dist="0" showAll="1" zIndex="0" linePlacementFlags="2" placement="0" priority="0">
+      <DiagramLayerSettings dist="0" showAll="1" placement="0" linePlacementFlags="2" priority="0" zIndex="0" obstacle="0">
         <properties>
           <Option type="Map">
-            <Option value="" type="QString" name="name"/>
-            <Option type="Map" name="properties">
-              <Option type="Map" name="show">
-                <Option value="true" type="bool" name="active"/>
-                <Option value="id" type="QString" name="field"/>
-                <Option value="2" type="int" name="type"/>
+            <Option name="name" value="" type="QString"/>
+            <Option name="properties" type="Map">
+              <Option name="show" type="Map">
+                <Option name="active" value="true" type="bool"/>
+                <Option name="field" value="id" type="QString"/>
+                <Option name="type" value="2" type="int"/>
               </Option>
             </Option>
-            <Option value="collection" type="QString" name="type"/>
+            <Option name="type" value="collection" type="QString"/>
           </Option>
         </properties>
       </DiagramLayerSettings>
@@ -469,8 +489,8 @@ def my_form_open(dialog, layer, feature):
           <editWidget type="TextEdit">
             <config>
               <Option type="Map">
-                <Option value="0" type="QString" name="IsMultiline"/>
-                <Option value="0" type="QString" name="UseHtml"/>
+                <Option name="IsMultiline" value="0" type="QString"/>
+                <Option name="UseHtml" value="0" type="QString"/>
               </Option>
             </config>
           </editWidget>
@@ -491,36 +511,36 @@ def my_form_open(dialog, layer, feature):
         </field>
       </fieldConfiguration>
       <aliases>
-        <alias index="0" name="" field="id"/>
-        <alias index="1" name="" field="type"/>
-        <alias index="2" name="" field="description"/>
+        <alias field="id" name="" index="0"/>
+        <alias field="type" name="" index="1"/>
+        <alias field="description" name="" index="2"/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <defaults>
-        <default expression="" applyOnUpdate="0" field="id"/>
-        <default expression="" applyOnUpdate="0" field="type"/>
-        <default expression="" applyOnUpdate="0" field="description"/>
+        <default field="id" expression="" applyOnUpdate="0"/>
+        <default field="type" expression="" applyOnUpdate="0"/>
+        <default field="description" expression="" applyOnUpdate="0"/>
       </defaults>
       <constraints>
-        <constraint notnull_strength="1" constraints="3" exp_strength="0" field="id" unique_strength="1"/>
-        <constraint notnull_strength="0" constraints="0" exp_strength="0" field="type" unique_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" exp_strength="0" field="description" unique_strength="0"/>
+        <constraint field="id" notnull_strength="1" exp_strength="0" unique_strength="1" constraints="3"/>
+        <constraint field="type" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
+        <constraint field="description" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
       </constraints>
       <constraintExpressions>
-        <constraint exp="" desc="" field="id"/>
-        <constraint exp="" desc="" field="type"/>
-        <constraint exp="" desc="" field="description"/>
+        <constraint field="id" exp="" desc=""/>
+        <constraint field="type" exp="" desc=""/>
+        <constraint field="description" exp="" desc=""/>
       </constraintExpressions>
       <attributeactions>
         <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
       </attributeactions>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="&quot;type&quot;" sortOrder="1">
+      <attributetableconfig sortExpression="&quot;type&quot;" actionWidgetStyle="dropDown" sortOrder="1">
         <columns>
-          <column width="-1" hidden="0" type="field" name="id"/>
-          <column width="-1" hidden="1" type="actions"/>
-          <column width="-1" hidden="0" type="field" name="type"/>
-          <column width="-1" hidden="0" type="field" name="description"/>
+          <column name="id" hidden="0" type="field" width="-1"/>
+          <column hidden="1" type="actions" width="-1"/>
+          <column name="type" hidden="0" type="field" width="-1"/>
+          <column name="description" hidden="0" type="field" width="-1"/>
         </columns>
       </attributetableconfig>
       <editform>Users/preda.radu/Desktop</editform>
@@ -547,14 +567,14 @@ def my_form_open(dialog, layer, feature):
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
       <editable>
-        <field editable="1" name="description"/>
-        <field editable="1" name="id"/>
-        <field editable="1" name="type"/>
+        <field name="description" editable="1"/>
+        <field name="id" editable="1"/>
+        <field name="type" editable="1"/>
       </editable>
       <labelOnTop>
-        <field labelOnTop="0" name="description"/>
-        <field labelOnTop="0" name="id"/>
-        <field labelOnTop="0" name="type"/>
+        <field name="description" labelOnTop="0"/>
+        <field name="id" labelOnTop="0"/>
+        <field name="type" labelOnTop="0"/>
       </labelOnTop>
       <widgets/>
       <conditionalstyles>
@@ -565,7 +585,151 @@ def my_form_open(dialog, layer, feature):
       <previewExpression>COALESCE("objectid", '&lt;NULL>')</previewExpression>
       <mapTip></mapTip>
     </maplayer>
-    <maplayer refreshOnNotifyMessage="" refreshOnNotifyEnabled="0" simplifyMaxScale="1" labelsEnabled="0" readOnly="0" simplifyDrawingHints="1" hasScaleBasedVisibilityFlag="0" autoRefreshTime="0" minScale="1e+8" geometry="Line" simplifyAlgorithm="0" autoRefreshEnabled="0" simplifyLocal="0" type="vector" simplifyDrawingTol="1" maxScale="0">
+    <maplayer autoRefreshEnabled="0" maxScale="0" autoRefreshTime="0" geometry="No geometry" readOnly="0" type="vector" hasScaleBasedVisibilityFlag="0" refreshOnNotifyMessage="" refreshOnNotifyEnabled="0" minScale="1e+8">
+      <id>locationtype_c568eaf4_ba15_4406_8a74_e5356858fe78</id>
+      <datasource>dbname='tutorial' host=127.0.0.1 port=5432 sslmode=disable key='id' table="dictionary"."locationtype" sql=</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>locationtype</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+          <srsid>3452</srsid>
+          <srid>4326</srid>
+          <authid>EPSG:4326</authid>
+          <description>WGS 84</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type>dataset</type>
+        <title></title>
+        <abstract>Location type for water specific elements</abstract>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent/>
+      </resourceMetadata>
+      <customproperties/>
+      <provider encoding="UTF-8">postgres</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <fieldConfiguration>
+        <field name="id">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="vl_active">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="value_fr">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="value_en">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="value_ro">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias field="id" name="" index="0"/>
+        <alias field="vl_active" name="" index="1"/>
+        <alias field="value_fr" name="" index="2"/>
+        <alias field="value_en" name="" index="3"/>
+        <alias field="value_ro" name="" index="4"/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <defaults>
+        <default field="id" expression="" applyOnUpdate="0"/>
+        <default field="vl_active" expression="" applyOnUpdate="0"/>
+        <default field="value_fr" expression="" applyOnUpdate="0"/>
+        <default field="value_en" expression="" applyOnUpdate="0"/>
+        <default field="value_ro" expression="" applyOnUpdate="0"/>
+      </defaults>
+      <constraints>
+        <constraint field="id" notnull_strength="1" exp_strength="0" unique_strength="1" constraints="3"/>
+        <constraint field="vl_active" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
+        <constraint field="value_fr" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
+        <constraint field="value_en" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
+        <constraint field="value_ro" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint field="id" exp="" desc=""/>
+        <constraint field="vl_active" exp="" desc=""/>
+        <constraint field="value_fr" exp="" desc=""/>
+        <constraint field="value_en" exp="" desc=""/>
+        <constraint field="value_ro" exp="" desc=""/>
+      </constraintExpressions>
+      <attributeactions>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+      </attributeactions>
+      <attributetableconfig sortExpression="" actionWidgetStyle="dropDown" sortOrder="0">
+        <columns/>
+      </attributetableconfig>
+      <editform>.</editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable/>
+      <labelOnTop/>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <expressionfields/>
+      <previewExpression></previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+    <maplayer autoRefreshEnabled="0" maxScale="0" simplifyDrawingTol="1" autoRefreshTime="0" geometry="Line" simplifyAlgorithm="0" simplifyMaxScale="1" readOnly="0" type="vector" hasScaleBasedVisibilityFlag="0" refreshOnNotifyMessage="" simplifyLocal="0" refreshOnNotifyEnabled="0" labelsEnabled="0" minScale="1e+8" simplifyDrawingHints="1">
       <extent>
         <xmin>450300</xmin>
         <ymin>400520</ymin>
@@ -622,7 +786,7 @@ def my_form_open(dialog, layer, feature):
           </spatialrefsys>
         </crs>
         <extent>
-          <spatial dimensions="2" minz="0" maxz="0" minx="0" maxy="0" maxx="0" miny="0" crs="EPSG:3844"/>
+          <spatial dimensions="2" miny="0" minz="0" maxz="0" maxx="0" crs="EPSG:3844" minx="0" maxy="0"/>
           <temporal>
             <period>
               <start></start>
@@ -640,10 +804,10 @@ def my_form_open(dialog, layer, feature):
         <map-layer-style name="default"/>
       </map-layer-style-manager>
       <auxiliaryLayer/>
-      <renderer-v2 enableorderby="0" symbollevels="0" type="singleSymbol" forceraster="0">
+      <renderer-v2 forceraster="0" enableorderby="0" symbollevels="0" type="singleSymbol">
         <symbols>
-          <symbol clip_to_extent="1" type="line" name="0" alpha="1">
-            <layer enabled="1" class="SimpleLine" locked="0" pass="0">
+          <symbol name="0" clip_to_extent="1" alpha="1" type="line">
+            <layer locked="0" enabled="1" pass="0" class="SimpleLine">
               <prop v="round" k="capstyle"/>
               <prop v="5;2" k="customdash"/>
               <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
@@ -725,9 +889,9 @@ def my_form_open(dialog, layer, feature):
               </effect>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option value="" type="QString" name="name"/>
+                  <Option name="name" value="" type="QString"/>
                   <Option name="properties"/>
-                  <Option value="collection" type="QString" name="type"/>
+                  <Option name="type" value="collection" type="QString"/>
                 </Option>
               </data_defined_properties>
             </layer>
@@ -737,6 +901,7 @@ def my_form_open(dialog, layer, feature):
         <sizescale/>
       </renderer-v2>
       <customproperties>
+        <property key="dualview/previewExpressions" value="id"/>
         <property key="embeddedWidgets/count" value="0"/>
         <property key="variableNames"/>
         <property key="variableValues"/>
@@ -745,17 +910,17 @@ def my_form_open(dialog, layer, feature):
       <featureBlendMode>0</featureBlendMode>
       <layerOpacity>1</layerOpacity>
       <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
-        <DiagramCategory penAlpha="255" barWidth="5" sizeScale="3x:0,0,0,0,0,0" penWidth="0" sizeType="MM" minScaleDenominator="0" width="15" minimumSize="0" backgroundColor="#ffffff" scaleDependency="Area" lineSizeScale="3x:0,0,0,0,0,0" rotationOffset="270" height="15" labelPlacementMethod="XHeight" diagramOrientation="Up" backgroundAlpha="255" maxScaleDenominator="1e+8" lineSizeType="MM" scaleBasedVisibility="0" enabled="0" penColor="#000000" opacity="1">
-          <fontProperties description="Sans Serif,9,-1,5,50,0,0,0,0,0" style=""/>
-          <attribute label="" color="#000000" field=""/>
+        <DiagramCategory minScaleDenominator="0" lineSizeScale="3x:0,0,0,0,0,0" labelPlacementMethod="XHeight" enabled="0" penWidth="0" minimumSize="0" backgroundColor="#ffffff" maxScaleDenominator="1e+8" width="15" rotationOffset="270" penAlpha="255" barWidth="5" sizeScale="3x:0,0,0,0,0,0" sizeType="MM" scaleBasedVisibility="0" backgroundAlpha="255" diagramOrientation="Up" penColor="#000000" opacity="1" lineSizeType="MM" height="15" scaleDependency="Area">
+          <fontProperties style="" description="Sans Serif,9,-1,5,50,0,0,0,0,0"/>
+          <attribute color="#000000" field="" label=""/>
         </DiagramCategory>
       </SingleCategoryDiagramRenderer>
-      <DiagramLayerSettings obstacle="0" dist="0" showAll="1" zIndex="0" linePlacementFlags="18" placement="2" priority="0">
+      <DiagramLayerSettings dist="0" showAll="1" placement="2" linePlacementFlags="18" priority="0" zIndex="0" obstacle="0">
         <properties>
           <Option type="Map">
-            <Option value="" type="QString" name="name"/>
+            <Option name="name" value="" type="QString"/>
             <Option name="properties"/>
-            <Option value="collection" type="QString" name="type"/>
+            <Option name="type" value="collection" type="QString"/>
           </Option>
         </properties>
       </DiagramLayerSettings>
@@ -764,8 +929,8 @@ def my_form_open(dialog, layer, feature):
           <editWidget type="TextEdit">
             <config>
               <Option type="Map">
-                <Option value="false" type="bool" name="IsMultiline"/>
-                <Option value="false" type="bool" name="UseHtml"/>
+                <Option name="IsMultiline" value="false" type="bool"/>
+                <Option name="UseHtml" value="false" type="bool"/>
               </Option>
             </config>
           </editWidget>
@@ -774,8 +939,8 @@ def my_form_open(dialog, layer, feature):
           <editWidget type="TextEdit">
             <config>
               <Option type="Map">
-                <Option value="false" type="bool" name="IsMultiline"/>
-                <Option value="false" type="bool" name="UseHtml"/>
+                <Option name="IsMultiline" value="false" type="bool"/>
+                <Option name="UseHtml" value="false" type="bool"/>
               </Option>
             </config>
           </editWidget>
@@ -784,14 +949,14 @@ def my_form_open(dialog, layer, feature):
           <editWidget type="ValueRelation">
             <config>
               <Option type="Map">
-                <Option value="false" type="bool" name="AllowMulti"/>
-                <Option value="false" type="bool" name="AllowNull"/>
-                <Option value="" type="QString" name="FilterExpression"/>
-                <Option value="id" type="QString" name="Key"/>
-                <Option value="status_8f5bab98_a39f_49b9_a071_1c31a4e22319" type="QString" name="Layer"/>
-                <Option value="false" type="bool" name="OrderByValue"/>
-                <Option value="false" type="bool" name="UseCompleter"/>
-                <Option value="value_en" type="QString" name="Value"/>
+                <Option name="AllowMulti" value="false" type="bool"/>
+                <Option name="AllowNull" value="false" type="bool"/>
+                <Option name="FilterExpression" value="" type="QString"/>
+                <Option name="Key" value="id" type="QString"/>
+                <Option name="Layer" value="status_8f5bab98_a39f_49b9_a071_1c31a4e22319" type="QString"/>
+                <Option name="OrderByValue" value="false" type="bool"/>
+                <Option name="UseCompleter" value="false" type="bool"/>
+                <Option name="Value" value="value_en" type="QString"/>
               </Option>
             </config>
           </editWidget>
@@ -800,55 +965,102 @@ def my_form_open(dialog, layer, feature):
           <editWidget type="ValueRelation">
             <config>
               <Option type="Map">
-                <Option value="false" type="bool" name="AllowMulti"/>
-                <Option value="false" type="bool" name="AllowNull"/>
-                <Option value="" type="QString" name="FilterExpression"/>
-                <Option value="id" type="QString" name="Key"/>
-                <Option value="pipe_function_ea2c1a16_fb60_4809_840f_cb0c6a2843ef" type="QString" name="Layer"/>
-                <Option value="false" type="bool" name="OrderByValue"/>
-                <Option value="false" type="bool" name="UseCompleter"/>
-                <Option value="value_en" type="QString" name="Value"/>
+                <Option name="AllowMulti" value="false" type="bool"/>
+                <Option name="AllowNull" value="false" type="bool"/>
+                <Option name="FilterExpression" value="" type="QString"/>
+                <Option name="Key" value="id" type="QString"/>
+                <Option name="Layer" value="pipe_function_ea2c1a16_fb60_4809_840f_cb0c6a2843ef" type="QString"/>
+                <Option name="OrderByValue" value="false" type="bool"/>
+                <Option name="UseCompleter" value="false" type="bool"/>
+                <Option name="Value" value="value_en" type="QString"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="fk_locationtype">
+          <editWidget type="ValueRelation">
+            <config>
+              <Option type="Map">
+                <Option name="AllowMulti" value="true" type="bool"/>
+                <Option name="AllowNull" value="true" type="bool"/>
+                <Option name="FilterExpression" value="" type="QString"/>
+                <Option name="Key" value="id" type="QString"/>
+                <Option name="Layer" value="locationtype_c568eaf4_ba15_4406_8a74_e5356858fe78" type="QString"/>
+                <Option name="OrderByValue" value="false" type="bool"/>
+                <Option name="UseCompleter" value="false" type="bool"/>
+                <Option name="Value" value="value_en" type="QString"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="fk_material">
+          <editWidget type="RelationReference">
+            <config>
+              <Option type="Map">
+                <Option name="AllowAddFeatures" value="false" type="bool"/>
+                <Option name="AllowNULL" value="false" type="bool"/>
+                <Option name="ChainFilters" value="true" type="bool"/>
+                <Option name="FilterFields" type="StringList">
+                  <Option value="short_ro" type="QString"/>
+                  <Option value="diameter" type="QString"/>
+                </Option>
+                <Option name="MapIdentification" value="false" type="bool"/>
+                <Option name="OrderByValue" value="false" type="bool"/>
+                <Option name="ReadOnly" value="false" type="bool"/>
+                <Option name="Relation" value="relation_pipe_material" type="QString"/>
+                <Option name="ShowForm" value="false" type="bool"/>
+                <Option name="ShowOpenFormButton" value="true" type="bool"/>
               </Option>
             </config>
           </editWidget>
         </field>
       </fieldConfiguration>
       <aliases>
-        <alias index="0" name="" field="id"/>
-        <alias index="1" name="" field="year"/>
-        <alias index="2" name="status" field="fk_status"/>
-        <alias index="3" name="function" field="fk_function"/>
+        <alias field="id" name="" index="0"/>
+        <alias field="year" name="" index="1"/>
+        <alias field="fk_status" name="status" index="2"/>
+        <alias field="fk_function" name="function" index="3"/>
+        <alias field="fk_locationtype" name="location_type" index="4"/>
+        <alias field="fk_material" name="" index="5"/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <defaults>
-        <default expression="" applyOnUpdate="0" field="id"/>
-        <default expression="" applyOnUpdate="0" field="year"/>
-        <default expression="" applyOnUpdate="0" field="fk_status"/>
-        <default expression="" applyOnUpdate="0" field="fk_function"/>
+        <default field="id" expression="" applyOnUpdate="0"/>
+        <default field="year" expression="" applyOnUpdate="0"/>
+        <default field="fk_status" expression="" applyOnUpdate="0"/>
+        <default field="fk_function" expression="" applyOnUpdate="0"/>
+        <default field="fk_locationtype" expression="" applyOnUpdate="0"/>
+        <default field="fk_material" expression="" applyOnUpdate="0"/>
       </defaults>
       <constraints>
-        <constraint notnull_strength="1" constraints="3" exp_strength="0" field="id" unique_strength="1"/>
-        <constraint notnull_strength="0" constraints="4" exp_strength="1" field="year" unique_strength="0"/>
-        <constraint notnull_strength="1" constraints="1" exp_strength="0" field="fk_status" unique_strength="0"/>
-        <constraint notnull_strength="1" constraints="1" exp_strength="0" field="fk_function" unique_strength="0"/>
+        <constraint field="id" notnull_strength="1" exp_strength="0" unique_strength="1" constraints="3"/>
+        <constraint field="year" notnull_strength="0" exp_strength="1" unique_strength="0" constraints="4"/>
+        <constraint field="fk_status" notnull_strength="1" exp_strength="0" unique_strength="0" constraints="1"/>
+        <constraint field="fk_function" notnull_strength="1" exp_strength="0" unique_strength="0" constraints="1"/>
+        <constraint field="fk_locationtype" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
+        <constraint field="fk_material" notnull_strength="1" exp_strength="0" unique_strength="0" constraints="1"/>
       </constraints>
       <constraintExpressions>
-        <constraint exp="" desc="" field="id"/>
-        <constraint exp="&quot;year&quot; IS NULL OR (1950 &lt;= &quot;year&quot; AND &quot;year&quot; &lt;= now())&#xa;&#xa;" desc="Install year must be between 1950 and the current year." field="year"/>
-        <constraint exp="" desc="" field="fk_status"/>
-        <constraint exp="" desc="" field="fk_function"/>
+        <constraint field="id" exp="" desc=""/>
+        <constraint field="year" exp="&quot;year&quot; IS NULL OR (1950 &lt;= &quot;year&quot; AND &quot;year&quot; &lt;= now())&#xa;&#xa;" desc="Install year must be between 1950 and the current year."/>
+        <constraint field="fk_status" exp="" desc=""/>
+        <constraint field="fk_function" exp="" desc=""/>
+        <constraint field="fk_locationtype" exp="" desc=""/>
+        <constraint field="fk_material" exp="" desc=""/>
       </constraintExpressions>
       <attributeactions>
         <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
       </attributeactions>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+      <attributetableconfig sortExpression="&quot;fk_function&quot;" actionWidgetStyle="dropDown" sortOrder="0">
         <columns>
-          <column width="-1" hidden="0" type="field" name="id"/>
-          <column width="-1" hidden="1" type="actions"/>
-          <column width="-1" hidden="0" type="field" name="year"/>
-          <column width="-1" hidden="0" type="field" name="fk_status"/>
-          <column width="-1" hidden="0" type="field" name="fk_function"/>
+          <column name="id" hidden="0" type="field" width="-1"/>
+          <column hidden="1" type="actions" width="-1"/>
+          <column name="year" hidden="0" type="field" width="-1"/>
+          <column name="fk_status" hidden="0" type="field" width="-1"/>
+          <column name="fk_function" hidden="0" type="field" width="169"/>
+          <column name="fk_locationtype" hidden="0" type="field" width="161"/>
+          <column name="fk_material" hidden="0" type="field" width="-1"/>
         </columns>
       </attributetableconfig>
       <editform>.</editform>
@@ -875,16 +1087,20 @@ def my_form_open(dialog, layer, feature):
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
       <editable>
-        <field editable="1" name="fk_function"/>
-        <field editable="1" name="fk_status"/>
-        <field editable="1" name="id"/>
-        <field editable="1" name="year"/>
+        <field name="fk_function" editable="1"/>
+        <field name="fk_locationtype" editable="1"/>
+        <field name="fk_material" editable="1"/>
+        <field name="fk_status" editable="1"/>
+        <field name="id" editable="1"/>
+        <field name="year" editable="1"/>
       </editable>
       <labelOnTop>
-        <field labelOnTop="0" name="fk_function"/>
-        <field labelOnTop="0" name="fk_status"/>
-        <field labelOnTop="0" name="id"/>
-        <field labelOnTop="0" name="year"/>
+        <field name="fk_function" labelOnTop="0"/>
+        <field name="fk_locationtype" labelOnTop="0"/>
+        <field name="fk_material" labelOnTop="0"/>
+        <field name="fk_status" labelOnTop="0"/>
+        <field name="id" labelOnTop="0"/>
+        <field name="year" labelOnTop="0"/>
       </labelOnTop>
       <widgets/>
       <conditionalstyles>
@@ -895,7 +1111,7 @@ def my_form_open(dialog, layer, feature):
       <previewExpression>id</previewExpression>
       <mapTip></mapTip>
     </maplayer>
-    <maplayer refreshOnNotifyMessage="" refreshOnNotifyEnabled="0" readOnly="0" hasScaleBasedVisibilityFlag="0" autoRefreshTime="0" minScale="1e+8" geometry="No geometry" autoRefreshEnabled="0" type="vector" maxScale="0">
+    <maplayer autoRefreshEnabled="0" maxScale="0" autoRefreshTime="0" geometry="No geometry" readOnly="0" type="vector" hasScaleBasedVisibilityFlag="0" refreshOnNotifyMessage="" refreshOnNotifyEnabled="0" minScale="1e+8">
       <id>pipe_function_ea2c1a16_fb60_4809_840f_cb0c6a2843ef</id>
       <datasource>dbname='tutorial' host=127.0.0.1 port=5432 sslmode=disable key='id' table="dictionary"."pipe_function" sql=</datasource>
       <keywordList>
@@ -981,41 +1197,41 @@ def my_form_open(dialog, layer, feature):
         </field>
       </fieldConfiguration>
       <aliases>
-        <alias index="0" name="" field="id"/>
-        <alias index="1" name="" field="vl_active"/>
-        <alias index="2" name="" field="value_ro"/>
-        <alias index="3" name="" field="value_en"/>
+        <alias field="id" name="" index="0"/>
+        <alias field="vl_active" name="" index="1"/>
+        <alias field="value_ro" name="" index="2"/>
+        <alias field="value_en" name="" index="3"/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <defaults>
-        <default expression="" applyOnUpdate="0" field="id"/>
-        <default expression="" applyOnUpdate="0" field="vl_active"/>
-        <default expression="" applyOnUpdate="0" field="value_ro"/>
-        <default expression="" applyOnUpdate="0" field="value_en"/>
+        <default field="id" expression="" applyOnUpdate="0"/>
+        <default field="vl_active" expression="" applyOnUpdate="0"/>
+        <default field="value_ro" expression="" applyOnUpdate="0"/>
+        <default field="value_en" expression="" applyOnUpdate="0"/>
       </defaults>
       <constraints>
-        <constraint notnull_strength="1" constraints="3" exp_strength="0" field="id" unique_strength="1"/>
-        <constraint notnull_strength="0" constraints="0" exp_strength="0" field="vl_active" unique_strength="0"/>
-        <constraint notnull_strength="0" constraints="2" exp_strength="0" field="value_ro" unique_strength="1"/>
-        <constraint notnull_strength="0" constraints="2" exp_strength="0" field="value_en" unique_strength="1"/>
+        <constraint field="id" notnull_strength="1" exp_strength="0" unique_strength="1" constraints="3"/>
+        <constraint field="vl_active" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
+        <constraint field="value_ro" notnull_strength="0" exp_strength="0" unique_strength="1" constraints="2"/>
+        <constraint field="value_en" notnull_strength="0" exp_strength="0" unique_strength="1" constraints="2"/>
       </constraints>
       <constraintExpressions>
-        <constraint exp="" desc="" field="id"/>
-        <constraint exp="" desc="" field="vl_active"/>
-        <constraint exp="" desc="" field="value_ro"/>
-        <constraint exp="" desc="" field="value_en"/>
+        <constraint field="id" exp="" desc=""/>
+        <constraint field="vl_active" exp="" desc=""/>
+        <constraint field="value_ro" exp="" desc=""/>
+        <constraint field="value_en" exp="" desc=""/>
       </constraintExpressions>
       <attributeactions>
         <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
       </attributeactions>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="&quot;id&quot;" sortOrder="0">
+      <attributetableconfig sortExpression="&quot;id&quot;" actionWidgetStyle="dropDown" sortOrder="0">
         <columns>
-          <column width="-1" hidden="0" type="field" name="id"/>
-          <column width="-1" hidden="0" type="field" name="vl_active"/>
-          <column width="231" hidden="0" type="field" name="value_ro"/>
-          <column width="176" hidden="0" type="field" name="value_en"/>
-          <column width="-1" hidden="1" type="actions"/>
+          <column name="id" hidden="0" type="field" width="-1"/>
+          <column name="vl_active" hidden="0" type="field" width="-1"/>
+          <column name="value_ro" hidden="0" type="field" width="231"/>
+          <column name="value_en" hidden="0" type="field" width="176"/>
+          <column hidden="1" type="actions" width="-1"/>
         </columns>
       </attributetableconfig>
       <editform>.</editform>
@@ -1036,7 +1252,318 @@ def my_form_open(dialog, layer, feature):
       <previewExpression>"id"</previewExpression>
       <mapTip></mapTip>
     </maplayer>
-    <maplayer refreshOnNotifyMessage="" refreshOnNotifyEnabled="0" readOnly="0" hasScaleBasedVisibilityFlag="0" autoRefreshTime="0" minScale="1e+8" geometry="No geometry" autoRefreshEnabled="0" type="vector" maxScale="0">
+    <maplayer autoRefreshEnabled="0" maxScale="0" autoRefreshTime="0" geometry="No geometry" readOnly="0" type="vector" hasScaleBasedVisibilityFlag="0" refreshOnNotifyMessage="" refreshOnNotifyEnabled="0" minScale="1e+8">
+      <id>pipe_material_b39f0bd5_1f5e_4bf6_bf5c_fd2920c63e62</id>
+      <datasource>dbname='tutorial' host=127.0.0.1 port=5432 sslmode=disable key='id' table="dictionary"."pipe_material" sql=</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>pipe_material</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+          <srsid>3452</srsid>
+          <srid>4326</srid>
+          <authid>EPSG:4326</authid>
+          <description>WGS 84</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type>dataset</type>
+        <title></title>
+        <abstract>List of materials for pipe. All the possible combinations material/diameter are listed in this table. _displayname_fr, _displayname_ro and _displayname_en are automatically generated by rules on insert and update. They are meant to be used in QGIS for the combo box of pipe.fk_material.
+
+Remark: The pipe industry maintains two different ways to refer to the dimension of a pipe:
+- Nominal Diameter (DN) which is commonly used for steel/iron pipes but also for GRP.
+- Exterior Diameter or Outer Diameter(OD) is taken into consideration when referring to the plastic pipes (PE, PVC).
+
+The DN is a number that represents the approximate interior diameter, in mm. The value represents only an approximation of the pipe diameter so that engineers use a nice round number; the actual value is usually off by a few mm.
+So, when referring simply to the diameter, it is assumed that for plastic pipes you're referring to the outer one, and for iron/steel and GRP ones to the approximate interior one - Nominal Diameter (DN).
+
+PE80 and PE100 are both types of polyethylene that are used for water pipes (PE32, PE40 and PE63 also exist).
+
+Pipes made from PE100 are mechanically stronger (and gives a greater pressure rating than PE80 for the same SDR).  Materials that are used in the production of polyethylene pipes are classified by MRS. Minimum Required Strenght (MRS) is the value of durability that the material has against internal pressure under 20 degrees C for 50 years in MPa.
+
+Material  | MRS (MPa)
+--------------------------
+PE 100    |   10
+--------------------------
+PE 80      |   8
+--------------------------
+
+Standard dimension ratio (SDR) is a method of rating a pipe's durability against pressure.
+The standard dimension ratio describes the correlation between the pipe dimension and the thickness of the pipe wall.
+SDR = external diameter (mm) / wall thickness (mm).
+Pipes with a lower SDR can withstand higher pressure.
+Common nominations are SDR11 and SDR17.
+
+The GRP pipes materials values were taken from producer HOBAS standards.
+
+Added only GRP values for SN 10000. TODO rest if relevant</abstract>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent/>
+      </resourceMetadata>
+      <customproperties/>
+      <provider encoding="UTF-8">postgres</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <fieldConfiguration>
+        <field name="id">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="vl_active">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="short_ro">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="value_ro">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="value_en">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="_displayname_fr">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="_displayname_en">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="_displayname_ro">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="diameter">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="diameter_nominal">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="diameter_internal">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="diameter_external">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="pressure_nominal">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="sdr">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="wall_thickness">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="sn">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias field="id" name="" index="0"/>
+        <alias field="vl_active" name="" index="1"/>
+        <alias field="short_ro" name="" index="2"/>
+        <alias field="value_ro" name="" index="3"/>
+        <alias field="value_en" name="" index="4"/>
+        <alias field="_displayname_fr" name="" index="5"/>
+        <alias field="_displayname_en" name="" index="6"/>
+        <alias field="_displayname_ro" name="" index="7"/>
+        <alias field="diameter" name="" index="8"/>
+        <alias field="diameter_nominal" name="" index="9"/>
+        <alias field="diameter_internal" name="" index="10"/>
+        <alias field="diameter_external" name="" index="11"/>
+        <alias field="pressure_nominal" name="" index="12"/>
+        <alias field="sdr" name="" index="13"/>
+        <alias field="wall_thickness" name="" index="14"/>
+        <alias field="sn" name="" index="15"/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <defaults>
+        <default field="id" expression="" applyOnUpdate="0"/>
+        <default field="vl_active" expression="" applyOnUpdate="0"/>
+        <default field="short_ro" expression="" applyOnUpdate="0"/>
+        <default field="value_ro" expression="" applyOnUpdate="0"/>
+        <default field="value_en" expression="" applyOnUpdate="0"/>
+        <default field="_displayname_fr" expression="" applyOnUpdate="0"/>
+        <default field="_displayname_en" expression="" applyOnUpdate="0"/>
+        <default field="_displayname_ro" expression="" applyOnUpdate="0"/>
+        <default field="diameter" expression="" applyOnUpdate="0"/>
+        <default field="diameter_nominal" expression="" applyOnUpdate="0"/>
+        <default field="diameter_internal" expression="" applyOnUpdate="0"/>
+        <default field="diameter_external" expression="" applyOnUpdate="0"/>
+        <default field="pressure_nominal" expression="" applyOnUpdate="0"/>
+        <default field="sdr" expression="" applyOnUpdate="0"/>
+        <default field="wall_thickness" expression="" applyOnUpdate="0"/>
+        <default field="sn" expression="" applyOnUpdate="0"/>
+      </defaults>
+      <constraints>
+        <constraint field="id" notnull_strength="1" exp_strength="0" unique_strength="1" constraints="3"/>
+        <constraint field="vl_active" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
+        <constraint field="short_ro" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
+        <constraint field="value_ro" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
+        <constraint field="value_en" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
+        <constraint field="_displayname_fr" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
+        <constraint field="_displayname_en" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
+        <constraint field="_displayname_ro" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
+        <constraint field="diameter" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
+        <constraint field="diameter_nominal" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
+        <constraint field="diameter_internal" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
+        <constraint field="diameter_external" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
+        <constraint field="pressure_nominal" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
+        <constraint field="sdr" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
+        <constraint field="wall_thickness" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
+        <constraint field="sn" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint field="id" exp="" desc=""/>
+        <constraint field="vl_active" exp="" desc=""/>
+        <constraint field="short_ro" exp="" desc=""/>
+        <constraint field="value_ro" exp="" desc=""/>
+        <constraint field="value_en" exp="" desc=""/>
+        <constraint field="_displayname_fr" exp="" desc=""/>
+        <constraint field="_displayname_en" exp="" desc=""/>
+        <constraint field="_displayname_ro" exp="" desc=""/>
+        <constraint field="diameter" exp="" desc=""/>
+        <constraint field="diameter_nominal" exp="" desc=""/>
+        <constraint field="diameter_internal" exp="" desc=""/>
+        <constraint field="diameter_external" exp="" desc=""/>
+        <constraint field="pressure_nominal" exp="" desc=""/>
+        <constraint field="sdr" exp="" desc=""/>
+        <constraint field="wall_thickness" exp="" desc=""/>
+        <constraint field="sn" exp="" desc=""/>
+      </constraintExpressions>
+      <attributeactions>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+      </attributeactions>
+      <attributetableconfig sortExpression="&quot;value_ro&quot;" actionWidgetStyle="dropDown" sortOrder="0">
+        <columns>
+          <column name="id" hidden="0" type="field" width="-1"/>
+          <column name="vl_active" hidden="0" type="field" width="-1"/>
+          <column name="short_ro" hidden="0" type="field" width="-1"/>
+          <column name="value_ro" hidden="0" type="field" width="-1"/>
+          <column name="value_en" hidden="0" type="field" width="-1"/>
+          <column name="_displayname_fr" hidden="0" type="field" width="142"/>
+          <column name="_displayname_en" hidden="0" type="field" width="157"/>
+          <column name="_displayname_ro" hidden="0" type="field" width="-1"/>
+          <column name="diameter" hidden="0" type="field" width="-1"/>
+          <column name="diameter_nominal" hidden="0" type="field" width="-1"/>
+          <column name="diameter_internal" hidden="0" type="field" width="-1"/>
+          <column name="diameter_external" hidden="0" type="field" width="-1"/>
+          <column name="pressure_nominal" hidden="0" type="field" width="-1"/>
+          <column name="sdr" hidden="0" type="field" width="-1"/>
+          <column name="wall_thickness" hidden="0" type="field" width="-1"/>
+          <column name="sn" hidden="0" type="field" width="-1"/>
+          <column hidden="1" type="actions" width="-1"/>
+        </columns>
+      </attributetableconfig>
+      <editform>.</editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable/>
+      <labelOnTop/>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <expressionfields/>
+      <previewExpression>_displayname_en</previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+    <maplayer autoRefreshEnabled="0" maxScale="0" autoRefreshTime="0" geometry="No geometry" readOnly="0" type="vector" hasScaleBasedVisibilityFlag="0" refreshOnNotifyMessage="" refreshOnNotifyEnabled="0" minScale="1e+8">
       <id>status_8f5bab98_a39f_49b9_a071_1c31a4e22319</id>
       <datasource>dbname='tutorial' host=127.0.0.1 port=5432 sslmode=disable key='id' table="dictionary"."status" sql=</datasource>
       <keywordList>
@@ -1129,46 +1656,46 @@ def my_form_open(dialog, layer, feature):
         </field>
       </fieldConfiguration>
       <aliases>
-        <alias index="0" name="" field="id"/>
-        <alias index="1" name="" field="vl_active"/>
-        <alias index="2" name="" field="value_ro"/>
-        <alias index="3" name="" field="description_ro"/>
-        <alias index="4" name="" field="value_en"/>
+        <alias field="id" name="" index="0"/>
+        <alias field="vl_active" name="" index="1"/>
+        <alias field="value_ro" name="" index="2"/>
+        <alias field="description_ro" name="" index="3"/>
+        <alias field="value_en" name="" index="4"/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <defaults>
-        <default expression="" applyOnUpdate="0" field="id"/>
-        <default expression="" applyOnUpdate="0" field="vl_active"/>
-        <default expression="" applyOnUpdate="0" field="value_ro"/>
-        <default expression="" applyOnUpdate="0" field="description_ro"/>
-        <default expression="" applyOnUpdate="0" field="value_en"/>
+        <default field="id" expression="" applyOnUpdate="0"/>
+        <default field="vl_active" expression="" applyOnUpdate="0"/>
+        <default field="value_ro" expression="" applyOnUpdate="0"/>
+        <default field="description_ro" expression="" applyOnUpdate="0"/>
+        <default field="value_en" expression="" applyOnUpdate="0"/>
       </defaults>
       <constraints>
-        <constraint notnull_strength="1" constraints="3" exp_strength="0" field="id" unique_strength="1"/>
-        <constraint notnull_strength="0" constraints="0" exp_strength="0" field="vl_active" unique_strength="0"/>
-        <constraint notnull_strength="0" constraints="2" exp_strength="0" field="value_ro" unique_strength="1"/>
-        <constraint notnull_strength="0" constraints="2" exp_strength="0" field="description_ro" unique_strength="1"/>
-        <constraint notnull_strength="0" constraints="2" exp_strength="0" field="value_en" unique_strength="1"/>
+        <constraint field="id" notnull_strength="1" exp_strength="0" unique_strength="1" constraints="3"/>
+        <constraint field="vl_active" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
+        <constraint field="value_ro" notnull_strength="0" exp_strength="0" unique_strength="1" constraints="2"/>
+        <constraint field="description_ro" notnull_strength="0" exp_strength="0" unique_strength="1" constraints="2"/>
+        <constraint field="value_en" notnull_strength="0" exp_strength="0" unique_strength="1" constraints="2"/>
       </constraints>
       <constraintExpressions>
-        <constraint exp="" desc="" field="id"/>
-        <constraint exp="" desc="" field="vl_active"/>
-        <constraint exp="" desc="" field="value_ro"/>
-        <constraint exp="" desc="" field="description_ro"/>
-        <constraint exp="" desc="" field="value_en"/>
+        <constraint field="id" exp="" desc=""/>
+        <constraint field="vl_active" exp="" desc=""/>
+        <constraint field="value_ro" exp="" desc=""/>
+        <constraint field="description_ro" exp="" desc=""/>
+        <constraint field="value_en" exp="" desc=""/>
       </constraintExpressions>
       <attributeactions>
         <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
       </attributeactions>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+      <attributetableconfig sortExpression="" actionWidgetStyle="dropDown" sortOrder="0">
         <columns>
-          <column width="-1" hidden="0" type="field" name="id"/>
-          <column width="-1" hidden="0" type="field" name="vl_active"/>
-          <column width="157" hidden="0" type="field" name="value_ro"/>
-          <column width="583" hidden="0" type="field" name="description_ro"/>
-          <column width="173" hidden="0" type="field" name="value_en"/>
-          <column width="-1" hidden="1" type="actions"/>
+          <column name="id" hidden="0" type="field" width="-1"/>
+          <column name="vl_active" hidden="0" type="field" width="-1"/>
+          <column name="value_ro" hidden="0" type="field" width="157"/>
+          <column name="description_ro" hidden="0" type="field" width="583"/>
+          <column name="value_en" hidden="0" type="field" width="173"/>
+          <column hidden="1" type="actions" width="-1"/>
         </columns>
       </attributetableconfig>
       <editform>.</editform>
@@ -1196,46 +1723,91 @@ def my_form_open(dialog, layer, feature):
     <layer id="pipe_c660d43f_5b40_4d42_b21b_e28850247315"/>
   </layerorder>
   <properties>
-    <Legend>
-      <filterByMap type="bool">false</filterByMap>
-    </Legend>
+    <WMSKeywordList type="QStringList">
+      <value></value>
+    </WMSKeywordList>
+    <DefaultStyles>
+      <Fill type="QString"></Fill>
+      <RandomColors type="bool">true</RandomColors>
+      <Line type="QString"></Line>
+      <Marker type="QString"></Marker>
+      <Opacity type="double">1</Opacity>
+      <ColorRamp type="QString"></ColorRamp>
+    </DefaultStyles>
     <Measurement>
       <AreaUnits type="QString">m2</AreaUnits>
       <DistanceUnits type="QString">meters</DistanceUnits>
     </Measurement>
-    <PAL>
-      <ShowingCandidates type="bool">false</ShowingCandidates>
-      <ShowingPartialsLabels type="bool">true</ShowingPartialsLabels>
-      <ShowingAllLabels type="bool">false</ShowingAllLabels>
-      <CandidatesPolygon type="int">30</CandidatesPolygon>
-      <CandidatesPoint type="int">16</CandidatesPoint>
-      <DrawOutlineLabels type="bool">true</DrawOutlineLabels>
-      <DrawRectOnly type="bool">false</DrawRectOnly>
-      <SearchMethod type="int">0</SearchMethod>
-      <CandidatesLine type="int">50</CandidatesLine>
-    </PAL>
-    <SpatialRefSys>
-      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
-    </SpatialRefSys>
-    <Gui>
-      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
-      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
-      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
-      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
-      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
-      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
-      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
-    </Gui>
-    <Paths>
-      <Absolute type="bool">false</Absolute>
-    </Paths>
+    <WMSOnlineResource type="QString"></WMSOnlineResource>
+    <WFSTLayers>
+      <Insert type="QStringList"/>
+      <Update type="QStringList"/>
+      <Delete type="QStringList"/>
+    </WFSTLayers>
     <PositionPrecision>
+      <DegreeFormat type="QString">MU</DegreeFormat>
       <DecimalPlaces type="int">2</DecimalPlaces>
       <Automatic type="bool">true</Automatic>
     </PositionPrecision>
+    <WMSFees type="QString">conditions unknown</WMSFees>
+    <WMSSegmentizeFeatureInfoGeometry type="bool">false</WMSSegmentizeFeatureInfoGeometry>
+    <WMSServiceAbstract type="QString"></WMSServiceAbstract>
+    <WMSServiceCapabilities type="bool">false</WMSServiceCapabilities>
+    <WMSContactPhone type="QString"></WMSContactPhone>
+    <WMSContactOrganization type="QString"></WMSContactOrganization>
+    <SpatialRefSys>
+      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
+    </SpatialRefSys>
+    <WFSUrl type="QString"></WFSUrl>
+    <Gui>
+      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
+      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
+      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
+      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
+      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
+      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
+      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
+    </Gui>
+    <PAL>
+      <DrawRectOnly type="bool">false</DrawRectOnly>
+      <ShowingPartialsLabels type="bool">true</ShowingPartialsLabels>
+      <CandidatesPolygon type="int">30</CandidatesPolygon>
+      <ShowingCandidates type="bool">false</ShowingCandidates>
+      <SearchMethod type="int">0</SearchMethod>
+      <CandidatesPoint type="int">16</CandidatesPoint>
+      <ShowingAllLabels type="bool">false</ShowingAllLabels>
+      <CandidatesLine type="int">50</CandidatesLine>
+      <DrawOutlineLabels type="bool">true</DrawOutlineLabels>
+    </PAL>
+    <Identify>
+      <disabledLayers type="QStringList"/>
+    </Identify>
+    <WFSLayers type="QStringList"/>
+    <WMSAddWktGeometry type="bool">false</WMSAddWktGeometry>
+    <Legend>
+      <filterByMap type="bool">false</filterByMap>
+    </Legend>
+    <WCSUrl type="QString"></WCSUrl>
+    <Paths>
+      <Absolute type="bool">false</Absolute>
+    </Paths>
+    <WMSServiceTitle type="QString"></WMSServiceTitle>
+    <WMSContactPerson type="QString"></WMSContactPerson>
+    <WMSUseLayerIDs type="bool">false</WMSUseLayerIDs>
+    <WMSRequestDefinedDataSources type="bool">false</WMSRequestDefinedDataSources>
+    <WMSPrecision type="QString">8</WMSPrecision>
+    <WMSContactMail type="QString"></WMSContactMail>
+    <Macros>
+      <pythonCode type="QString"></pythonCode>
+    </Macros>
+    <WMSImageQuality type="int">90</WMSImageQuality>
     <Measure>
       <Ellipsoid type="QString">krass</Ellipsoid>
     </Measure>
+    <WMSContactPosition type="QString"></WMSContactPosition>
+    <WMSUrl type="QString"></WMSUrl>
+    <WCSLayers type="QStringList"/>
+    <WMSAccessConstraints type="QString">None</WMSAccessConstraints>
   </properties>
   <visibility-presets/>
   <transformContext/>
@@ -1246,6 +1818,15 @@ def my_form_open(dialog, layer, feature):
     <type></type>
     <title></title>
     <abstract></abstract>
+    <contact>
+      <name></name>
+      <organization></organization>
+      <position></position>
+      <voice></voice>
+      <fax></fax>
+      <email></email>
+      <role></role>
+    </contact>
     <links/>
     <author>web</author>
     <creation>2018-03-27T08:18:05</creation>
