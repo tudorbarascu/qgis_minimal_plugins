@@ -1,0 +1,760 @@
+<!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
+<qgis version="3.1.0-Master" projectname="">
+  <homePath path=""/>
+  <title></title>
+  <autotransaction active="0"/>
+  <evaluateDefaultValues active="0"/>
+  <trust active="0"/>
+  <projectCrs>
+    <spatialrefsys>
+      <proj4>+proj=sterea +lat_0=46 +lon_0=25 +k=0.99975 +x_0=500000 +y_0=500000 +ellps=krass +towgs84=2.329,-147.042,-92.08,0.309,-0.325,-0.497,5.69 +units=m +no_defs</proj4>
+      <srsid>27265</srsid>
+      <srid>3844</srid>
+      <authid>EPSG:3844</authid>
+      <description>Pulkovo 1942(58) / Stereo70</description>
+      <projectionacronym>sterea</projectionacronym>
+      <ellipsoidacronym>krass</ellipsoidacronym>
+      <geographicflag>false</geographicflag>
+    </spatialrefsys>
+  </projectCrs>
+  <layer-tree-group>
+    <customproperties/>
+    <layer-tree-layer providerKey="postgres" checked="Qt::Checked" id="status_8f5bab98_a39f_49b9_a071_1c31a4e22319" source="dbname='tutorial' host=127.0.0.1 port=5432 sslmode=disable key='id' table=&quot;dictionary&quot;.&quot;status&quot; sql=" name="status" expanded="1">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer providerKey="postgres" checked="Qt::Checked" id="boundaries_10d40433_4723_4b72_bc08_827114ac6438" source="dbname='tutorial' host=127.0.0.1 port=5432 sslmode=disable key='id' srid=3844 type=LineString table=&quot;topo&quot;.&quot;boundaries&quot; (geom) sql=" name="boundaries" expanded="1">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer providerKey="postgres" checked="Qt::Checked" id="buildings_2ad88db9_689a_4b52_8f9a_61473debfc69" source="dbname='tutorial' host=127.0.0.1 port=5432 sslmode=disable key='id' srid=3844 type=Polygon table=&quot;topo&quot;.&quot;buildings&quot; (geom) sql=" name="buildings" expanded="1">
+      <customproperties/>
+    </layer-tree-layer>
+    <custom-order enabled="0">
+      <item>buildings_2ad88db9_689a_4b52_8f9a_61473debfc69</item>
+      <item>boundaries_10d40433_4723_4b72_bc08_827114ac6438</item>
+      <item>status_8f5bab98_a39f_49b9_a071_1c31a4e22319</item>
+    </custom-order>
+  </layer-tree-group>
+  <snapping-settings mode="2" unit="1" type="2" tolerance="30" intersection-snapping="0" enabled="1">
+    <individual-layer-settings>
+      <layer-setting units="1" id="buildings_2ad88db9_689a_4b52_8f9a_61473debfc69" type="2" tolerance="30" enabled="1"/>
+      <layer-setting units="1" id="boundaries_10d40433_4723_4b72_bc08_827114ac6438" type="2" tolerance="30" enabled="1"/>
+    </individual-layer-settings>
+  </snapping-settings>
+  <relations/>
+  <mapcanvas name="theMapCanvas" annotationsVisible="1">
+    <units>meters</units>
+    <extent>
+      <xmin>450163.44647652393905446</xmin>
+      <ymin>400347.13217352546053007</ymin>
+      <xmax>451100.60169726348249242</xmax>
+      <ymax>401158.6784112325985916</ymax>
+    </extent>
+    <rotation>0</rotation>
+    <destinationsrs>
+      <spatialrefsys>
+        <proj4>+proj=sterea +lat_0=46 +lon_0=25 +k=0.99975 +x_0=500000 +y_0=500000 +ellps=krass +towgs84=2.329,-147.042,-92.08,0.309,-0.325,-0.497,5.69 +units=m +no_defs</proj4>
+        <srsid>27265</srsid>
+        <srid>3844</srid>
+        <authid>EPSG:3844</authid>
+        <description>Pulkovo 1942(58) / Stereo70</description>
+        <projectionacronym>sterea</projectionacronym>
+        <ellipsoidacronym>krass</ellipsoidacronym>
+        <geographicflag>false</geographicflag>
+      </spatialrefsys>
+    </destinationsrs>
+    <rendermaptile>0</rendermaptile>
+  </mapcanvas>
+  <legend updateDrawingOrder="true">
+    <legendlayer showFeatureCount="0" drawingOrder="-1" checked="Qt::Checked" open="true" name="status">
+      <filegroup hidden="false" open="true">
+        <legendlayerfile layerid="status_8f5bab98_a39f_49b9_a071_1c31a4e22319" visible="1" isInOverview="0"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer showFeatureCount="0" drawingOrder="-1" checked="Qt::Checked" open="true" name="boundaries">
+      <filegroup hidden="false" open="true">
+        <legendlayerfile layerid="boundaries_10d40433_4723_4b72_bc08_827114ac6438" visible="1" isInOverview="0"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer showFeatureCount="0" drawingOrder="-1" checked="Qt::Checked" open="true" name="buildings">
+      <filegroup hidden="false" open="true">
+        <legendlayerfile layerid="buildings_2ad88db9_689a_4b52_8f9a_61473debfc69" visible="1" isInOverview="0"/>
+      </filegroup>
+    </legendlayer>
+  </legend>
+  <mapViewDocks/>
+  <projectlayers>
+    <maplayer autoRefreshTime="0" refreshOnNotifyEnabled="0" geometry="Line" simplifyMaxScale="1" minScale="10001" autoRefreshEnabled="0" simplifyDrawingTol="1" simplifyLocal="0" hasScaleBasedVisibilityFlag="1" refreshOnNotifyMessage="" type="vector" maxScale="0" labelsEnabled="1" readOnly="0" simplifyDrawingHints="1" simplifyAlgorithm="0">
+      <extent>
+        <xmin>449549.40625</xmin>
+        <ymin>400084.71875</ymin>
+        <xmax>451342.65625</xmax>
+        <ymax>401227.21875</ymax>
+      </extent>
+      <id>boundaries_10d40433_4723_4b72_bc08_827114ac6438</id>
+      <datasource>dbname='tutorial' host=127.0.0.1 port=5432 sslmode=disable key='id' srid=3844 type=LineString table="topo"."boundaries" (geom) sql=</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>boundaries</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=sterea +lat_0=46 +lon_0=25 +k=0.99975 +x_0=500000 +y_0=500000 +ellps=krass +towgs84=2.329,-147.042,-92.08,0.309,-0.325,-0.497,5.69 +units=m +no_defs</proj4>
+          <srsid>27265</srsid>
+          <srid>3844</srid>
+          <authid>EPSG:3844</authid>
+          <description>Pulkovo 1942(58) / Stereo70</description>
+          <projectionacronym>sterea</projectionacronym>
+          <ellipsoidacronym>krass</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type>dataset</type>
+        <title></title>
+        <abstract></abstract>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <proj4>+proj=sterea +lat_0=46 +lon_0=25 +k=0.99975 +x_0=500000 +y_0=500000 +ellps=krass +towgs84=2.329,-147.042,-92.08,0.309,-0.325,-0.497,5.69 +units=m +no_defs</proj4>
+            <srsid>27265</srsid>
+            <srid>3844</srid>
+            <authid>EPSG:3844</authid>
+            <description>Pulkovo 1942(58) / Stereo70</description>
+            <projectionacronym>sterea</projectionacronym>
+            <ellipsoidacronym>krass</ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent/>
+      </resourceMetadata>
+      <provider encoding="UTF-8">postgres</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <renderer-v2 symbollevels="0" type="singleSymbol" forceraster="0" enableorderby="0">
+        <symbols>
+          <symbol clip_to_extent="1" type="line" alpha="1" name="0">
+            <layer class="SimpleLine" locked="0" pass="0" enabled="1">
+              <prop v="square" k="capstyle"/>
+              <prop v="5;2" k="customdash"/>
+              <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+              <prop v="MM" k="customdash_unit"/>
+              <prop v="0" k="draw_inside_polygon"/>
+              <prop v="bevel" k="joinstyle"/>
+              <prop v="85,85,85,255" k="line_color"/>
+              <prop v="solid" k="line_style"/>
+              <prop v="0.1" k="line_width"/>
+              <prop v="MM" k="line_width_unit"/>
+              <prop v="0" k="offset"/>
+              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="MM" k="offset_unit"/>
+              <prop v="0" k="use_custom_dash"/>
+              <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option type="QString" name="name" value=""/>
+                  <Option name="properties"/>
+                  <Option type="QString" name="type" value="collection"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale/>
+      </renderer-v2>
+      <customproperties>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
+        <DiagramCategory scaleBasedVisibility="1" penAlpha="255" barWidth="5" backgroundColor="#ffffff" sizeScale="3x:0,0,0,0,0,0" height="15" rotationOffset="270" minimumSize="0" penColor="#000000" penWidth="0" backgroundAlpha="255" opacity="1" labelPlacementMethod="XHeight" lineSizeType="MM" minScaleDenominator="inf" sizeType="MM" maxScaleDenominator="10001" enabled="0" width="15" scaleDependency="Area" lineSizeScale="3x:0,0,0,0,0,0" diagramOrientation="Up">
+          <fontProperties style="" description="Cantarell,11,-1,5,50,0,0,0,0,0"/>
+          <attribute color="#000000" label="" field=""/>
+        </DiagramCategory>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings priority="0" placement="2" linePlacementFlags="10" dist="0" obstacle="0" zIndex="0" showAll="1">
+        <properties>
+          <Option type="Map">
+            <Option type="QString" name="name" value=""/>
+            <Option name="properties"/>
+            <Option type="QString" name="type" value="collection"/>
+          </Option>
+        </properties>
+      </DiagramLayerSettings>
+      <fieldConfiguration>
+        <field name="id">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option type="QString" name="IsMultiline" value="0"/>
+                <Option type="QString" name="UseHtml" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias name="" index="0" field="id"/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <defaults>
+        <default expression="" applyOnUpdate="0" field="id"/>
+      </defaults>
+      <constraints>
+        <constraint notnull_strength="1" field="id" constraints="3" exp_strength="0" unique_strength="1"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint exp="" desc="" field="id"/>
+      </constraintExpressions>
+      <attributeactions>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+      </attributeactions>
+      <attributetableconfig sortOrder="0" sortExpression="" actionWidgetStyle="dropDown">
+        <columns>
+          <column hidden="0" width="-1" type="field" name="id"/>
+          <column hidden="0" width="-1" type="field" name="sursa_biroul_gis"/>
+          <column hidden="0" width="-1" type="field" name="ult_data"/>
+          <column hidden="0" width="-1" type="field" name="ult_editor"/>
+          <column hidden="1" width="-1" type="actions"/>
+        </columns>
+      </attributetableconfig>
+      <editform>Users/preda.radu/Desktop</editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath>../../..</editforminitfilepath>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable/>
+      <labelOnTop/>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <expressionfields/>
+      <previewExpression>COALESCE("objectid", '&lt;NULL>')</previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+    <maplayer autoRefreshTime="0" refreshOnNotifyEnabled="0" geometry="Polygon" simplifyMaxScale="1" minScale="30001" autoRefreshEnabled="0" simplifyDrawingTol="1" simplifyLocal="0" hasScaleBasedVisibilityFlag="1" refreshOnNotifyMessage="" type="vector" maxScale="0" labelsEnabled="0" readOnly="0" simplifyDrawingHints="1" simplifyAlgorithm="0">
+      <extent>
+        <xmin>449581.0625</xmin>
+        <ymin>400125.09375</ymin>
+        <xmax>451320.5625</xmax>
+        <ymax>401223.34375</ymax>
+      </extent>
+      <id>buildings_2ad88db9_689a_4b52_8f9a_61473debfc69</id>
+      <datasource>dbname='tutorial' host=127.0.0.1 port=5432 sslmode=disable key='id' srid=3844 type=Polygon table="topo"."buildings" (geom) sql=</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>buildings</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=sterea +lat_0=46 +lon_0=25 +k=0.99975 +x_0=500000 +y_0=500000 +ellps=krass +towgs84=2.329,-147.042,-92.08,0.309,-0.325,-0.497,5.69 +units=m +no_defs</proj4>
+          <srsid>27265</srsid>
+          <srid>3844</srid>
+          <authid>EPSG:3844</authid>
+          <description>Pulkovo 1942(58) / Stereo70</description>
+          <projectionacronym>sterea</projectionacronym>
+          <ellipsoidacronym>krass</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type>dataset</type>
+        <title></title>
+        <abstract></abstract>
+        <contact>
+          <name></name>
+          <organization></organization>
+          <position></position>
+          <voice></voice>
+          <fax></fax>
+          <email></email>
+          <role></role>
+        </contact>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <proj4>+proj=sterea +lat_0=46 +lon_0=25 +k=0.99975 +x_0=500000 +y_0=500000 +ellps=krass +towgs84=2.329,-147.042,-92.08,0.309,-0.325,-0.497,5.69 +units=m +no_defs</proj4>
+            <srsid>27265</srsid>
+            <srid>3844</srid>
+            <authid>EPSG:3844</authid>
+            <description>Pulkovo 1942(58) / Stereo70</description>
+            <projectionacronym>sterea</projectionacronym>
+            <ellipsoidacronym>krass</ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent>
+          <spatial maxy="0" miny="0" crs="EPSG:3844" dimensions="2" minx="0" maxx="0" minz="0" maxz="0"/>
+          <temporal>
+            <period>
+              <start></start>
+              <end></end>
+            </period>
+          </temporal>
+        </extent>
+      </resourceMetadata>
+      <provider encoding="UTF-8">postgres</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <renderer-v2 symbollevels="0" type="RuleRenderer" forceraster="0" enableorderby="0">
+        <rules key="{0ee84f83-4a81-461a-995d-5d2a2c1b9796}">
+          <rule symbol="0" filter="&quot;type&quot; = 3" key="{eedc875c-97c5-49ca-97c8-a7f646de670f}" label="Water Buildings"/>
+          <rule symbol="1" filter="&quot;type&quot; = 4" key="{bb8eeb72-3845-4dbc-8a86-34daad24cfba}" label="Wastewater Buildings"/>
+          <rule symbol="2" filter="&quot;type&quot; NOT IN (3, 4) OR &quot;type&quot; IS NULL" key="{af281804-a7bf-4e51-b2aa-983b30605bb4}" label="Others"/>
+        </rules>
+        <symbols>
+          <symbol clip_to_extent="1" type="fill" alpha="1" name="0">
+            <layer class="SimpleFill" locked="0" pass="4" enabled="1">
+              <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+              <prop v="166,249,249,255" k="color"/>
+              <prop v="bevel" k="joinstyle"/>
+              <prop v="0,0" k="offset"/>
+              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="MM" k="offset_unit"/>
+              <prop v="0,0,0,255" k="outline_color"/>
+              <prop v="solid" k="outline_style"/>
+              <prop v="0.26" k="outline_width"/>
+              <prop v="MM" k="outline_width_unit"/>
+              <prop v="solid" k="style"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option type="QString" name="name" value=""/>
+                  <Option name="properties"/>
+                  <Option type="QString" name="type" value="collection"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol clip_to_extent="1" type="fill" alpha="1" name="1">
+            <layer class="SimpleFill" locked="0" pass="3" enabled="1">
+              <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+              <prop v="244,0,0,255" k="color"/>
+              <prop v="bevel" k="joinstyle"/>
+              <prop v="0,0" k="offset"/>
+              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="MM" k="offset_unit"/>
+              <prop v="0,0,0,255" k="outline_color"/>
+              <prop v="solid" k="outline_style"/>
+              <prop v="0.26" k="outline_width"/>
+              <prop v="MM" k="outline_width_unit"/>
+              <prop v="solid" k="style"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option type="QString" name="name" value=""/>
+                  <Option name="properties"/>
+                  <Option type="QString" name="type" value="collection"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol clip_to_extent="1" type="fill" alpha="1" name="2">
+            <layer class="SimpleFill" locked="0" pass="1" enabled="1">
+              <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+              <prop v="253,253,253,255" k="color"/>
+              <prop v="bevel" k="joinstyle"/>
+              <prop v="0,0" k="offset"/>
+              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="MM" k="offset_unit"/>
+              <prop v="137,137,137,255" k="outline_color"/>
+              <prop v="solid" k="outline_style"/>
+              <prop v="0.5" k="outline_width"/>
+              <prop v="MM" k="outline_width_unit"/>
+              <prop v="no" k="style"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option type="QString" name="name" value=""/>
+                  <Option name="properties"/>
+                  <Option type="QString" name="type" value="collection"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+      </renderer-v2>
+      <customproperties>
+        <property key="dualview/previewExpressions">
+          <value>COALESCE("objectid", '&lt;NULL>')</value>
+        </property>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <SingleCategoryDiagramRenderer diagramType="Pie" attributeLegend="1">
+        <DiagramCategory scaleBasedVisibility="1" penAlpha="255" barWidth="5" backgroundColor="#ffffff" sizeScale="3x:0,0,0,0,0,0" height="15" rotationOffset="270" minimumSize="0" penColor="#000000" penWidth="0" backgroundAlpha="255" opacity="1" labelPlacementMethod="XHeight" lineSizeType="MM" minScaleDenominator="0" sizeType="MM" maxScaleDenominator="30001" enabled="0" width="15" scaleDependency="Area" lineSizeScale="3x:0,0,0,0,0,0" diagramOrientation="Up">
+          <fontProperties style="" description="Sans,9,-1,5,50,0,0,0,0,0"/>
+          <attribute color="#000000" label="" field=""/>
+        </DiagramCategory>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings priority="0" placement="0" linePlacementFlags="2" dist="0" obstacle="0" zIndex="0" showAll="1">
+        <properties>
+          <Option type="Map">
+            <Option type="QString" name="name" value=""/>
+            <Option type="Map" name="properties">
+              <Option type="Map" name="show">
+                <Option type="bool" name="active" value="true"/>
+                <Option type="QString" name="field" value="id"/>
+                <Option type="int" name="type" value="2"/>
+              </Option>
+            </Option>
+            <Option type="QString" name="type" value="collection"/>
+          </Option>
+        </properties>
+      </DiagramLayerSettings>
+      <fieldConfiguration>
+        <field name="id">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option type="QString" name="IsMultiline" value="0"/>
+                <Option type="QString" name="UseHtml" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="type">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="description">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias name="" index="0" field="id"/>
+        <alias name="" index="1" field="type"/>
+        <alias name="" index="2" field="description"/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <defaults>
+        <default expression="" applyOnUpdate="0" field="id"/>
+        <default expression="" applyOnUpdate="0" field="type"/>
+        <default expression="" applyOnUpdate="0" field="description"/>
+      </defaults>
+      <constraints>
+        <constraint notnull_strength="1" field="id" constraints="3" exp_strength="0" unique_strength="1"/>
+        <constraint notnull_strength="0" field="type" constraints="0" exp_strength="0" unique_strength="0"/>
+        <constraint notnull_strength="0" field="description" constraints="0" exp_strength="0" unique_strength="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint exp="" desc="" field="id"/>
+        <constraint exp="" desc="" field="type"/>
+        <constraint exp="" desc="" field="description"/>
+      </constraintExpressions>
+      <attributeactions>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+      </attributeactions>
+      <attributetableconfig sortOrder="1" sortExpression="&quot;type&quot;" actionWidgetStyle="dropDown">
+        <columns>
+          <column hidden="0" width="-1" type="field" name="id"/>
+          <column hidden="1" width="-1" type="actions"/>
+          <column hidden="0" width="-1" type="field" name="type"/>
+          <column hidden="0" width="-1" type="field" name="description"/>
+        </columns>
+      </attributetableconfig>
+      <editform>Users/preda.radu/Desktop</editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath>../../..</editforminitfilepath>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from PyQt4.QtGui import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable>
+        <field editable="1" name="description"/>
+        <field editable="1" name="id"/>
+        <field editable="1" name="type"/>
+      </editable>
+      <labelOnTop>
+        <field labelOnTop="0" name="description"/>
+        <field labelOnTop="0" name="id"/>
+        <field labelOnTop="0" name="type"/>
+      </labelOnTop>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <expressionfields/>
+      <previewExpression>COALESCE("objectid", '&lt;NULL>')</previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+    <maplayer autoRefreshTime="0" refreshOnNotifyEnabled="0" geometry="No geometry" minScale="1e+8" autoRefreshEnabled="0" hasScaleBasedVisibilityFlag="0" refreshOnNotifyMessage="" type="vector" maxScale="0" readOnly="0">
+      <id>status_8f5bab98_a39f_49b9_a071_1c31a4e22319</id>
+      <datasource>dbname='tutorial' host=127.0.0.1 port=5432 sslmode=disable key='id' table="dictionary"."status" sql=</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>status</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+          <srsid>3452</srsid>
+          <srid>4326</srid>
+          <authid>EPSG:4326</authid>
+          <description>WGS 84</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type>dataset</type>
+        <title></title>
+        <abstract></abstract>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent/>
+      </resourceMetadata>
+      <customproperties>
+        <property key="dualview/previewExpressions">
+          <value>"id"</value>
+        </property>
+      </customproperties>
+      <provider encoding="UTF-8">postgres</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <fieldConfiguration>
+        <field name="id">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="vl_active">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="value_ro">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="description_ro">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="value_en">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias name="" index="0" field="id"/>
+        <alias name="" index="1" field="vl_active"/>
+        <alias name="" index="2" field="value_ro"/>
+        <alias name="" index="3" field="description_ro"/>
+        <alias name="" index="4" field="value_en"/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <defaults>
+        <default expression="" applyOnUpdate="0" field="id"/>
+        <default expression="" applyOnUpdate="0" field="vl_active"/>
+        <default expression="" applyOnUpdate="0" field="value_ro"/>
+        <default expression="" applyOnUpdate="0" field="description_ro"/>
+        <default expression="" applyOnUpdate="0" field="value_en"/>
+      </defaults>
+      <constraints>
+        <constraint notnull_strength="1" field="id" constraints="3" exp_strength="0" unique_strength="1"/>
+        <constraint notnull_strength="0" field="vl_active" constraints="0" exp_strength="0" unique_strength="0"/>
+        <constraint notnull_strength="0" field="value_ro" constraints="0" exp_strength="0" unique_strength="0"/>
+        <constraint notnull_strength="0" field="description_ro" constraints="0" exp_strength="0" unique_strength="0"/>
+        <constraint notnull_strength="0" field="value_en" constraints="0" exp_strength="0" unique_strength="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint exp="" desc="" field="id"/>
+        <constraint exp="" desc="" field="vl_active"/>
+        <constraint exp="" desc="" field="value_ro"/>
+        <constraint exp="" desc="" field="description_ro"/>
+        <constraint exp="" desc="" field="value_en"/>
+      </constraintExpressions>
+      <attributeactions>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+      </attributeactions>
+      <attributetableconfig sortOrder="0" sortExpression="" actionWidgetStyle="dropDown">
+        <columns>
+          <column hidden="0" width="-1" type="field" name="id"/>
+          <column hidden="0" width="-1" type="field" name="vl_active"/>
+          <column hidden="0" width="157" type="field" name="value_ro"/>
+          <column hidden="0" width="583" type="field" name="description_ro"/>
+          <column hidden="0" width="173" type="field" name="value_en"/>
+          <column hidden="1" width="-1" type="actions"/>
+        </columns>
+      </attributetableconfig>
+      <editform></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable/>
+      <labelOnTop/>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <expressionfields/>
+      <previewExpression>"id"</previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+  </projectlayers>
+  <layerorder>
+    <layer id="buildings_2ad88db9_689a_4b52_8f9a_61473debfc69"/>
+    <layer id="boundaries_10d40433_4723_4b72_bc08_827114ac6438"/>
+    <layer id="status_8f5bab98_a39f_49b9_a071_1c31a4e22319"/>
+  </layerorder>
+  <properties>
+    <PositionPrecision>
+      <Automatic type="bool">true</Automatic>
+      <DecimalPlaces type="int">2</DecimalPlaces>
+    </PositionPrecision>
+    <Paths>
+      <Absolute type="bool">false</Absolute>
+    </Paths>
+    <Legend>
+      <filterByMap type="bool">false</filterByMap>
+    </Legend>
+    <Gui>
+      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
+      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
+      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
+      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
+      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
+      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
+      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
+    </Gui>
+    <Measurement>
+      <AreaUnits type="QString">m2</AreaUnits>
+      <DistanceUnits type="QString">meters</DistanceUnits>
+    </Measurement>
+    <Measure>
+      <Ellipsoid type="QString">krass</Ellipsoid>
+    </Measure>
+    <SpatialRefSys>
+      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
+    </SpatialRefSys>
+  </properties>
+  <visibility-presets/>
+  <transformContext/>
+  <projectMetadata>
+    <identifier></identifier>
+    <parentidentifier></parentidentifier>
+    <language></language>
+    <type></type>
+    <title></title>
+    <abstract></abstract>
+    <links/>
+    <author>web</author>
+    <creation>2018-03-27T08:18:05</creation>
+  </projectMetadata>
+  <Annotations/>
+  <Layouts/>
+</qgis>
