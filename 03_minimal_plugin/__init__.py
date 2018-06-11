@@ -13,6 +13,7 @@
 from qgis.PyQt.QtWidgets import *
 from qgis.core import QgsDataSourceUri, QgsVectorLayer, Qgis
 
+
 def classFactory(iface):
     return MinimalPlugin(iface)
 
